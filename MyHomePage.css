@@ -1,0 +1,42 @@
+/** Add css rules here for your application. */
+
+/** Most GWT widgets already have a style name defined */
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.bookstable td {
+  border: 1px solid #BBBBBB;
+  padding: 3px;
+}
+
+.bookdialog td {
+  border: 1px solid #BBBBBB;
+  padding: 1px;
+}
+
+.linkandclose td {
+  border: 0px
+}
+
+.pointerCursor {
+  cursor: pointer
+}
+
+.ys-SimpleWindow-Pointer {
+  cursor: pointer;
+}
+
+.customeDeckPanelBottom {
+  border-color: #92c1f0;
+  border-style: solid;
+  border-width: 1px 0px 1px;
+  overflow: hidden;
+  padding: 6px;
+}

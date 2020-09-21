@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="Yoshiki Shibata">
+   <META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 10.0.4.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+   <title>『Effective Java 第2版』正誤表</title>
+</head>
+<body>
+
+<center>
+<h2>
+<font color="#006600">『Effective Java 第2版』正誤表</font></h2>
+<p>2012年3月20日改訂</center>
+<CENTER>
+<h4><a href="http://java.sun.com/docs/books/effective/index.html">オフィシャルホームページへ</a></h4>
+</CENTER>
+<H4>はじめに</H4>
+<dl>
+  <dd>『Effective Java 第2版」は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。なお、本正誤表では、日本語表現の細かな修正については、掲載していません。また、翻訳時点では発見されていなくて、その後発見された原著の誤りについては、<font color="#009900">（原著の変更内容）</font>として示しています。
+  <CENTER>
+  <table BORDER >
+    
+      <tr>
+        <td><a href="#01Printing">第1刷正誤表</a></td>
+        <TD><a href="#05Printing">第5刷正誤表</a></TD>
+        <TD><a href="#09Printing">第9刷正誤表</a></TD>
+      </tr>
+      <tr>
+        <td><a href="#02Printing">第2刷正誤表</a></td>
+	<TD><a href="#06Printing">第6刷正誤表</a></TD>
+        <TD><a href="#10Printing">第10刷正誤表</a></TD>
+      </tr>
+      <tr>
+        <td><a href="#03Printing">第3刷正誤表</a></td>
+        <td><a href="#07Printing">第7刷正誤表</a></td>
+        <td><a href="#11Printing">第11刷正誤表</a></td>
+      </tr>
+      <tr>
+        <TD><a href="#04Printing">第4刷正誤表</a></TD>
+        <td><a href="#07Printing">第8刷正誤表</a></td>
+      </tr>
+    </table>
+  </CENTER>
+  <CENTER>
+  </CENTER>
+  </dd>
+</dl>
+<a NAME="01Printing"></a><B>第1刷 (2008年11月25日発行)</B><br>
+<a NAME="02Printing"></a><B>第2刷 (2008年12月25日発行)</B><UL>
+  <li>15頁： 第2段落の最後の行の「詳細<FONT color="#ff0000">メソッド</FONT>は」は、「詳細<FONT color="#000099">メッセージ</FONT>」の誤り。<FONT color="#009900">(原著の変更内容)</FONT></li>
+  <li>23頁： コード例にフェンスポストエラーを含んでおり、for文の終了条件を以下の通り修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  <blockquote><code></code>i &lt;= Integer.MAX_VALUE</blockquote></li>
+  <li>51頁： 最後から2行目の「形式を<FONT color="#ff0000">指定</FONT>した場合に、」を「形式を<FONT color="#0000cc">明示</FONT>した場合に、」に修正。</li>
+  <li>74頁： コードの最後の行から始まっているhashDoubleメソッドはstaticであり、reはvalとなる。<FONT color="#009900">(原著の変更内容)</FONT><br>
+  <blockquote><pre>private static int hashDouble(double val) {
+    long longBits = Double.doubleToLongBits(val);
+    return (int)(longBits ^ (longBits &gt;&gt;&gt; 32));
+}</pre></blockquote></li>
+  <li>78頁： 6行目の「Complex(<FONT color="#ff0000">float, float</FONT>)」は、「Complex(<FONT color="#000099">double, double</FONT>)」の誤り。</li>
+  <li>105頁： 第3段落1行目の「エンクロージングインスタンス<FONT color="#ff0000">を</FONT>アクセス」を「エンクロージングインスタンス<FONT color="#0000cc">へ</FONT>アクセス」に修正。</li>
+  <li><font color="#000000">126頁： </font>2つの警告の2つ目が途中で切れている。正しくは、以下の通り。
+  <blockquote>Union.java:6: 警告:[unchecked] raw 型java.util.Setのメンバとしての<BR>
+  addAll(java.util.Collection&lt;? extends E&gt;) への無検査呼び出しです。</blockquote></li>
+  <li>133頁： 第4段落の1行目の「項目<FONT color="#ff0000">26</FONT>」は「項目<FONT color="#0000cc">25</FONT>」の誤り。</li>
+  <li>136頁： 第3段落の2行目の「単純<FONT color="#ff0000">であり</FONT>好ましいです」を「単純<FONT color="#0000cc">なので</FONT>好ましいです」に修正。</li>
+  <li>191頁： 最後のエラーが英語のままになっている。正しくは、以下の通り。
+  <blockquote>Va.java:6: java.util.Arrays のasList(java.lang.Object[]) は(int[]) に適用できま<br>
+  せん。</blockquote>
+  </li>
+  <li>147頁： 最後の段落の2行目の[JLS, 14.<FONT color="#ff0000">2.1</FONT>]は、[JLS, 14.<FONT color="#000099">21</FONT>]の誤り。<FONT color="#009900">(原著の変更内容)</FONT></li>
+  <li>173頁： 第4段落の後半の<blockquote>マーカーインタフェースとしてそのマーカーを定義すると、その<B><FONT color="#ff0000">マーカーインタフェース</FONT></B>が適用可能な唯一のインタフェースを、<B><FONT color="#ff0000">マーカーインタフェース</FONT></B>に拡張させることができます。それにより、すべてのマークされた型が、その<B><FONT color="#ff0000">マーカーインタフェース</FONT></B>が適用可能な唯一のインタフェースのサブタイプであることも保証されます。</blockquote>を、<blockquote>マーカーインタフェースとしてそのマーカーを定義すると、その<FONT color="#0000cc"><B>マーカー</B></FONT>が適用可能な唯一のインタフェースを、<B><FONT color="#0000cc">マーカー</FONT></B>に拡張させることができます。それにより、すべてのマークされた型が、その<FONT color="#0000cc"><B>マーカー</B></FONT>が適用可能な唯一のインタフェースのサブタイプであることも保証されます。</blockquote>に修正。</li>
+  <li>179頁： コード例中のIllegalArgumentExceptionのコンストラクタの引数を次のように修正。<FONT color="#009900">(原著の変更内容)</FONT> 　
+  <blockquote>
+  <pre>throw new IllegalArgumentException(this.start +" after "+ this.end);</pre>
+  </blockquote>
+  </li>
+  <li>187頁： 第3段落の1行目の「<FONT color="#ff0000">オーバーロードしている</FONT>remove(<FONT color="#ff0000">E</FONT>) を選択します。<FONT color="#ff0000">E はセットの要素型（Integer）です。</FONT>」を「remove(<FONT color="#0000cc">Object</FONT>) を選択します。」に修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  </li>
+  <li>200頁： ExceptionTestのvalue()の戻り値型を次のように修正。<FONT color="#009900">(原著の変更内容)</FONT> 　
+  <blockquote>
+  <pre>Class&lt;? extends Throwable&gt; value();</pre>
+  </blockquote>
+  </li>
+  <li>200頁： 第2段落を次のように修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  <BLOCKQUOTE>リリース1.5以降は、パッケージレベルのドキュメントコメントは<code>package.html</code>ではなくファイル<code>package-info.java</code>内に書くべきです。
+パッケージレベルのドキュメントコメントに加えて、<code>package-info.java</code>は<FONT color="#000099">パッケージ宣言を含んでいなければなりません。そして、<code>package-info.java</code>は、</FONT>パッケージアノテーションを含むことができます。</BLOCKQUOTE>
+  </li>
+  <li>206頁： 第１段落の「間違える機会が<FONT color="#ff0000">それぞれ2回と3回</FONT>あります。」を「間違える機会が<FONT color="#000099">多く</FONT>あります。」に修正。<FONT color="#009900">(原著の変更内容)</FONT></li>
+  <li>256頁： 第3段落の2行目の「<FONT color="#ff0000">セット</FONT>が<FONT color="#ff0000">要素</FONT>に」は、「<FONT color="#0000ff">要素</FONT>が<FONT color="#0000ff">セット</FONT>に」の誤り。</li>
+  <li>258頁： 頁の下のコードのInterruptedExceptionのキャッチ処理を次のように修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  <blockquote>
+<pre>catch(InterruptedException ex) {
+    throw new AssertionError(ex);
+}
+</pre></blockquote>
+</li>
+  <li>262頁： 1行目の[Bloch01, 項目<FONT color="#ff0000">50</FONT>]は、[Bloch01, 項目<FONT color="#000099">49</FONT>]の誤り。<FONT color="#009900">(原著の変更内容)</FONT></li>
+  <li>277頁： 第3段落の最初の行の「ほとんどのプログラマ<FONT color="#ff0000">が</FONT>Thread.yieldの唯一の利用は」を「ほとんどのプログラマ<FONT color="#000099">にとって</FONT>Thread.yieldの唯一の利用<FONT color="#000099">方法</FONT>は」に修正。</li>
+  <li>297頁： readResolve()メソッドの宣言から「<FONT color="#ff0000">throws ObjectStreamException</FONT>」を取り除く。</li>
+  <li>302頁： <code>SerializationProxy</code>クラスのコンストラクタを次のように修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  <blockquote>
+  <pre>start = p.start;
+end = p.end;
+</pre>
+  </blockquote>
+  </li>
+</UL>
+<a NAME="03Printing"></a><B>第3刷 (2009年05月25日発行)</B><UL>
+  <li>51頁： 最後から2行目の「形式を<FONT color="#ff0000">指定</FONT>した場合に、」を「形式を<FONT color="#0000cc">明示</FONT>した場合に、」に修正。</li>
+  <li>105頁： 第3段落1行目の「エンクロージングインスタンス<FONT color="#ff0000">を</FONT>アクセス」を「エンクロージングインスタンス<FONT color="#0000cc">へ</FONT>アクセス」に修正。</li>
+  <li>133頁： 第4段落の1行目の「項目<FONT color="#ff0000">26</FONT>」は「項目<FONT color="#0000cc">25</FONT>」の誤り。</li>
+  <li>136頁： 第3段落の2行目の「単純<FONT color="#ff0000">であり</FONT>好ましいです」を「単純<FONT color="#0000cc">なので</FONT>好ましいです」に修正。</li>
+  <li>173頁： 第4段落の後半の
+  <blockquote>マーカーインタフェースとしてそのマーカーを定義すると、その<B><FONT color="#ff0000">マーカーインタフェース</FONT></B>が適用可能な唯一のインタフェースを、<B><FONT color="#ff0000">マーカーインタフェース</FONT></B>に拡張させることができます。それにより、すべてのマークされた型が、その<B><FONT color="#ff0000">マーカーインタフェース</FONT></B>が適用可能な唯一のインタフェースのサブタイプであることも保証されます。</blockquote>
+  を、
+  <blockquote>マーカーインタフェースとしてそのマーカーを定義すると、その<FONT color="#0000cc"><B>マーカー</B></FONT>が適用可能な唯一のインタフェースを、<B><FONT color="#0000cc">マーカー</FONT></B>に拡張させることができます。それにより、すべてのマークされた型が、その<FONT color="#0000cc"><B>マーカー</B></FONT>が適用可能な唯一のインタフェースのサブタイプであることも保証されます。</blockquote>
+  に修正。</li>
+  <li>187頁： 第3段落の1行目の「<FONT color="#ff0000">オーバーロードしている</FONT>remove(<FONT color="#ff0000">E</FONT>) を選択します。<FONT color="#ff0000">E はセットの要素型（Integer）です。</FONT>」を「remove(<FONT color="#0000cc">Object</FONT>) を選択します。」に修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  </li>
+  <li>200頁： 第2段落の2行目の「パッケージ宣言含んでいなければなりません」を「パッケージ宣言<FONT color="#0000ff">を</FONT>含んでいなければなりません」に修正。</li>
+  <li>302頁： <code>SerializationProxy</code>クラスのコンストラクタを次のように修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  <blockquote>
+  <pre>start = p.start;
+end = p.end;
+</pre></blockquote>
+  </li>
+</UL>
+<a NAME="04Printing"></a><B>第4刷（2009年9月30日発行）</B><br>
+<a NAME="05Printing"></a><B>第5刷（2009年12月1日発行）</B><br>
+<a NAME="06Printing"></a><B>第6刷（2010年7月30日発行）</B>
+<UL>
+  <li>51頁： 最後から2行目の「形式を<FONT color="#ff0000">指定</FONT>した場合に、」を「形式を<FONT color="#0000cc">明示</FONT>した場合に、」に修正。</li>
+  <li>105頁： 第3段落1行目の「エンクロージングインスタンス<FONT color="#ff0000">を</FONT>アクセス」を「エンクロージングインスタンス<FONT color="#0000cc">へ</FONT>アクセス」に修正。</li>
+  <li>133頁： 第4段落の1行目の「項目<FONT color="#ff0000">26</FONT>」は「項目<FONT color="#0000cc">25</FONT>」の誤り。</li>
+  <li>136頁： 第3段落の2行目の「単純<FONT color="#ff0000">であり</FONT>好ましいです」を「単純<FONT color="#0000cc">なので</FONT>好ましいです」に修正。</li>
+  <li>187頁： 第3段落の1行目の「<FONT color="#ff0000">オーバーロードしている</FONT>remove(<FONT color="#ff0000">E</FONT>) を選択します。<FONT color="#ff0000">E はセットの要素型（Integer）です。</FONT>」を「remove(<FONT color="#0000cc">Object</FONT>) を選択します。」に修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  </li>
+  <li>200頁： 第2段落の2行目の「パッケージ宣言含んでいなければなりません」を「パッケージ宣言<FONT color="#0000ff">を</FONT>含んでいなければなりません」に修正。</li>
+</UL>
+<a NAME="07Printing"></a><B>第7刷（2010年12月XX日発行）</B>
+<UL>
+  <li>51頁： 最後から2行目の「形式を<FONT color="#ff0000">指定</FONT>した場合に、」を「形式を<FONT color="#0000cc">明示</FONT>した場合に、」に修正。</li>
+  <li>133頁： 第4段落の1行目の「項目<FONT color="#ff0000">26</FONT>」は「項目<FONT color="#0000cc">25</FONT>」の誤り。</li>
+  <li>136頁： 第3段落の2行目の「単純<FONT color="#ff0000">であり</FONT>好ましいです」を「単純<FONT color="#0000cc">なので</FONT>好ましいです」に修正。</li>
+  <li>187頁： 第3段落の1行目の「<FONT color="#ff0000">オーバーロードしている</FONT>remove(<FONT color="#ff0000">E</FONT>) を選択します。<FONT color="#ff0000">E はセットの要素型（Integer）です。</FONT>」を「remove(<FONT color="#0000cc">Object</FONT>) を選択します。」に修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  </li>
+  <li>200頁： 第2段落の2行目の「パッケージ宣言含んでいなければなりません」を「パッケージ宣言<FONT color="#0000ff">を</FONT>含んでいなければなりません」に修正。</li>
+</UL>
+<a NAME="08Printing"></a><B>第8刷（2011年5月20日発行）</B>
+<UL>
+  <li>187頁： 第3段落の1行目の「<FONT color="#ff0000">オーバーロードしている</FONT>remove(<FONT color="#ff0000">E</FONT>) を選択します。<FONT color="#ff0000">E はセットの要素型（Integer）です。</FONT>」を「remove(<FONT color="#0000cc">Object</FONT>) を選択します。」に修正。<FONT color="#009900">(原著の変更内容)</FONT>
+  </li>
+</UL>
+<a NAME="09Printing"></a><B>第9刷（2011年8月25日発行）</B><br>
+<a NAME="10Printing"></a><B>第10刷（2011年11月10日発行）</B><br>
+<a NAME="11Printing"></a><B>第11刷（2012年4月XX日発行）</B>
+<UL>
+  <li>現在なし
+  </li>
+</UL>
+
+<H4>謝辞</H4>
+誤りの指摘を頂きました次の方々に感謝いたします。
+<blockquote>堂阪 真司、山内 智也、<A href="http://www.javareading.com/bof/">Java読書会</A>、<A href="http://blog.glatts.com/blog/study/" target="_blank">GLATTS勉強会
+</A>、梶谷 典之、坂本 慎一郎、行本 礼嗣、高橋 徹</blockquote>
+</body>
+</html>

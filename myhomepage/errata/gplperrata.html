@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="Yoshiki Shibata">
+   <META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 10.0.4.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+   <title>『プログラミング言語Goフレーズブック』正誤表</title>
+</head>
+<body>
+
+<center>
+<h2>
+<font color="#006600">『プログラミング言語Goフレーズブック』正誤表</font></h2>
+<p>2013年11月2日改訂</center>
+<H4>はじめに</H4>
+<dl>
+  <dd>『プログラミング言語Goフレーズブック』は、校正の際に誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。なお、本正誤表では、日本語表現の細かな修正については、掲載していません。また、翻訳時点では発見されていなくて、その後発見された原著の誤りについては、<font color="#009900">（原著の変更内容）</font>として示しています。</dd>
+</dl>
+<a NAME="01Printing"></a><B>第1刷 (2012年10月10日発行)</B><UL>
+  <li>2頁： 5段落目の「Robert Griesemer<FONT color="#ff0000">, Pikeと</FONT>」を「Robert Griesemer<FONT color="#0000ff">、Robert Pike、</FONT>」に修正。</li>
+  <li>8頁： 4段落目の最後から2行目の「コード<FONT color="#ff0000">と</FONT>結び付けたい」を「コード<FONT color="#0000ff">を</FONT>結び付けたい」に修正。</li>
+  <li>31頁： 3段落目の3行目の「Log()メソッド」は、「Print()メソッド」の誤り。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>31頁： 4段落目の6行目の「<FONT color="#ff0000">インタフェースに対するメソッドを通して値を渡すと、暗黙にポインタが渡されます。そして、</FONT>」を「<FONT color="#0000ff">値を渡したとして、インタフェースに対するメソッド呼び出しのためにその値のコピーへのポインターが暗黙に渡されると、</FONT>」に修正。</li>
+  <li>77頁： Slice()関数に関する最後の2行の記述は削除。</li>
+  <li>78頁： コード中の「import &quot;exp/utf8string&quot;」を「import &quot;code.google.com/p/go.exp/utf8string&quot;」に修正<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>78頁： コード中の「FirstHalf」を「firstHalf」に修正（二カ所）。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>78頁： 最後の段落の「exp/utf8stringパッケージ」を「code.google.com/p/go.exp/utf8stringパッケージ」に修正<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>85頁： map.goのPrintfの部分を以下のように修正<FONT color="#009900">（原著の変更内容）</FONT>
+  <pre>
+fmt.Printf("%s %d %d %d\n", a[12], b[12], b["12"], b[12.0])
+</pre>
+</li>
+  <li>86頁： map.goからの出力を以下のように修正<FONT color="#009900">（原著の変更内容）</FONT>
+  <pre>
+A string in a map 12 13 14
+</pre>
+</li>
+  <li>119頁： 第2段落の2行目の「gc」を「Gc」に修正。</li>
+  <li>149頁： lineRead.goのコードの「 lineReader<FONT color="#ff0000">, _</FONT> := bufio.NewReaderSize(file, 20)」を「 lineReader := bufio.NewReaderSize(file,
+  20)」に修正</li>
+  <li>151頁： isFile.goのコードの「if err != <FONT color="#ff0000">err</FONT> {」を「if err != <FONT color="#0000ff">nil</FONT> {」に修正<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>155頁： 最後の行の「<FONT color="#ff0000">upd6</FONT>」は「<FONT color="#0000cc">udp6</FONT>」の誤り。</li>
+</UL>
+
+<H4>謝辞</H4>
+誤りの指摘を頂きました次の方々に感謝いたします。
+<blockquote>横山 隆司、前村 忠</blockquote>
+</body>
+</html>

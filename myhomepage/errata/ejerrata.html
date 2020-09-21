@@ -1,0 +1,349 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="Yoshiki Shibata">
+   <META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 10.0.4.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+   <title>「Effective Javaプログラミング言語ガイド」正誤表</title>
+</head>
+<body>
+
+<center>
+<h2>
+<font color="#006600">「Effective Javaプログラミング言語ガイド」正誤表</font></h2></center>
+
+<center>
+<p>2007年12月13日改訂</center>
+<CENTER>
+<h4><a href="http://java.sun.com/docs/books/effective/index.html">オフィシャルホームページへ</a></h4>
+</CENTER>
+<H4>はじめに</H4>
+<dl>
+  <dd>『Effective Javaプログラミング言語ガイド」は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。なお、本正誤表では、日本語表現の細かな修正については、掲載していません。また、翻訳時点では発見されていなくて、その後発見された原著の誤りについては、<font color="#009900">（原著の変更内容）</font>として示しています。
+  <CENTER>
+  <table BORDER >
+    
+      <tr>
+        <td>
+        <center><a href="#01Printing">第1刷正誤表</a></center>
+        </td>
+        <td><a href="#06Printing">第6刷正誤表</a></td>
+        <td><a href="#11Printing">第11刷正誤表</a></td>
+        <TD><a href="#16Printing">第16刷正誤表</a></TD>
+      </tr>
+      <tr>
+        <td><a href="#02Printing">第2刷正誤表</a></td>
+        <td><a href="#07Printing">第7刷正誤表</a></td>
+        <td><a href="#12printing">第12刷正誤表</a></td>
+        <TD><A href="#17Printing">第17刷正誤表</A></TD>
+      </tr>
+      <tr>
+        <td><a href="#03Printing">第3刷正誤表</a></td>
+        <td><a href="#08Printing">第8刷正誤表</a></td>
+        <td><a href="#13Printing">第13刷正誤表</a></td>
+        <TD></TD>
+      </tr>
+      <tr>
+        <td><a href="#04Printing">第4刷正誤表</a></td>
+        <td><a href="#09Printing">第9刷正誤表</a></td>
+        <td><A href="#14Printing">第14刷正誤表</A></td>
+        <TD></TD>
+      </tr>
+      <tr>
+        <td><a href="#05Printing">第5刷正誤表</a></td>
+        <td><a href="#10Printing">第10刷正誤表</a></td>
+        <td><A href="#15Printing">第15刷正誤表</A></td>
+        <TD></TD>
+      </tr>
+    
+  </table>
+  </CENTER>
+  <CENTER>
+  </CENTER>
+  </dd>
+</dl>
+<h4>
+<a NAME="01Printing"></a>第1刷(2001年11月30日発行)</h4>
+<UL>
+  <li>6頁：3段落目の途中の「Boolean.value<font color="#000099">o</font>f」は、「Boolean.value<font color="#FF0000">O</font>f」の誤り。</li>
+  <li><font color="#000000">15頁： 第3段落の1行目の「</font><font color="#000099">不変です</font><font color="#000000">ので」を、「</font><font color="#FF0000">初期化後に変更されない</font><font color="#000000">ので」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>16頁：3行目、「既存のオブジェクトを再利用<font color="#000099">する</font>」は、「既存のオブジェクトを再利用<font color="#FF0000">しない</font>」の誤り。</li>
+  <li>19頁： 第2段落内の2箇所の「<font color="#000099">items</font>配列」は、「<font color="#FF0000">elements</font>配列」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>26頁： equalsメソッドの契約に関して、反射的、対象的、推移的、整合的のすべてで、「任意の参照値」を「<font color="#FF0000">nullでない、</font>任意の参照値」に変更。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">27頁： コード内のコメントの「大文字小文字</font><font color="#000099">(case-insensitive)を区別する</font><font color="#000000">」は、「大文字小文字</font><font color="#FF0000">を区別しない(case-insensitive)</font><font color="#000000">」の誤り。</font></li>
+  <li><font color="#000000">28頁： 上から2行目、8行目、9行目の三ヶ所にある「大文字小文字を区別</font><font color="#000099">する</font><font color="#000000">」は、「大文字小文字を区別</font><font color="#FF0000">しない</font><font color="#000000">」の誤り。</font></li>
+  <li>32頁： 「JLS, 15.<font color="#000099">19</font>.2」は、「JLS, 15.<font color="#FF0000">20</font>.2」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>37頁：hashCodeの処方箋のiii.で、「(f ^ (f&nbsp; &gt;&gt;&gt; 32))<b><font color="#3333FF">)</font></b>」は、「(f ^ (f&nbsp; &gt;&gt;&gt; 32))」の誤り(閉じカッコが1つ多い)。</li>
+  <li><font color="#000000">41頁： コード内のﾄPaddedString()メソッドに対するコメントで、「Integer.toString(i)
+&lt;= length」は、「Integer.toString(i)</font><font color="#FF0000">.length()</font><font color="#000000">
+&lt;= length」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">47頁： コードのclone()メソッド内での「</font><font color="#000099">(Entry)</font><font color="#000000">」キャストは不要。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>50頁： 訳注の4行目で、「Coneable」は、「C<font color="#FF0000">l</font>oneable」の誤り。</li>
+  <li><font color="#000000">55頁： コードの後の三行目の「</font><font color="#000099">INTEGER</font><font color="#000000">.MAX_VALUE」は、「</font><font color="#FF0000">Integer</font><font color="#000000">.MAX_VALUE」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">65頁： コード内のComplexコンストラクタは、「private」と宣言されていますが、その宣言を取り除いてパッケージプライベートにします。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">71頁： 上から17行目の「全く同じシグニチャのメソッド」は、「全く同じシグニチャ</font><font color="#FF0000">と戻り値型</font><font color="#000000">のメソッド」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>71頁： 最後の段落の下から4行目で、「<i>forwading method</i>」は、「<i>forwa<font color="#FF0000">r</font>ding
+method</i>」の誤り。</li>
+  <li>79頁：　4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>98頁： 最後の行の「クライアンの」は、「クライアン<font color="#FF0000">ト</font>の」誤り。</li>
+  <li><font color="#000000">103頁： Operationクラスのコードで、PLUS、MINUS、TIMES、DIVIDEがfinal宣言されていませんので、「public
+static Operation」ではなく、「public static </font><font color="#FF0000">final</font><font color="#000000">
+Operation」と宣言します。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">111頁： 項目23の最初の段落の4行目の「これは、</font><font color="#000099">一般原則の特殊な場合であり、エラーが発生したらできるだけ速くエラーを検出するようにすべきです。</font><font color="#000000">」を「これは、</font><font color="#FF0000">エラーが発生したらできるだけ速くエラーを検出するようにすべきであるという一般原則の特殊な場合です。</font><font color="#000000">」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li><font color="#000000">129頁： 第2段落の3行目の「M.S.</font><font color="#000099">,</font><font color="#000000">
+or Ph.D.」は、「M.S. or Ph.D.」の誤り(M.S.の後のカンマを取り除く)。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">129頁： 下から3行目の「ユーティリティもあります</font><font color="#000099">[Doclint]</font><font color="#000000">。」を、「ユーティリティもあります。」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">130頁： 第3段落の最後の行の「</font><font color="#000099">weblint[Weblint}などの</font><font color="#000000">」を削除。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">143頁： 一行目の「java.</font><font color="#000099">util</font><font color="#000000">.ThreadLocal」は、「java.</font><font color="#FF0000">lang</font><font color="#000000">.ThreadLocal」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">148頁： コードの下から3行目の「args.length-1」は、「args.length」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>156頁：表7.1のクラス、インタフェースの項目の例の最後で、「HttpServ<font color="#3333FF">e</font>let」は、「HttpServlet」の誤り。</li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>173頁： 第2段落の3行目で、「IndexOutOfBounds<font color="#000099">例外</font>」は、「IndexOutOfBounds<font color="#FF0000">Exception</font>」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">182頁： 下から4行目の「</font><font color="#3333FF">オブジェクト参照ではなく」</font><font color="#000000">は、「</font><font color="#FF0000">longあるいはdouble以外の</font><font color="#000000">」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>189頁：第2段落の3行目、「バ<font color="#3333FF">ッケ</font>ト」は、「バ<font color="#FF0000">ケッ</font>ト」の誤り。</li>
+  <li><font color="#000000">191頁： 下から11行目の「この級数</font><font color="#000099">の和</font><font color="#000000">は」は、「この級数は」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">191頁： 下から5行目の「Lea</font><font color="#000099">99</font><font color="#000000">」は、「Lea</font><font color="#FF0000">00</font><font color="#000000">」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>199頁：第4段落の1行目、「サブ<font color="#3333FF">ク</font>ループ」は、「サブ<font color="#FF0000">グ</font>ループ」の誤り。</li>
+  <li>199頁：第4段落の最後から2行目、「ライブラリーを使<font color="#3333FF">いなさい</font>」は、「ライブラリーを使<font color="#FF0000">う</font>」の誤り。</li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+  <li>214頁：4行目の「S<font color="#000099">ep</font>cification」は、「S<font color="#FF0000">pe</font>cification」の誤り。</li>
+  <li>222頁： [Doclint]の項目をすべて以下の[DocCheck]で置き換える。<font color="#009900">（原著の変更内容）</font><FONT color="#FF0000">[DocCheck] <i>Doc Check. </i>Sun Microsystems. October 2001. &lt;http://java.sun.com/j2se/javadoc/doccheck/index.html&gt;</FONT></li>
+  <li>224頁： [Weblint]の項目をすべて削除。<font color="#009900">（原著の変更内容）</font></li>
+</UL>
+<P><a NAME="02Printing"></a><b>第2刷(2002年1月30日発行)</b>&nbsp;</P>
+<UL>
+  <li><font color="#000000">15頁： 第3段落の1行目の「</font><font color="#000099">不変です</font><font color="#000000">ので」を、「</font><font color="#FF0000">初期化後に変更されない</font><font color="#000000">ので」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>19頁： 第2段落内の2箇所の「<font color="#000099">items</font>配列」は、「<font color="#FF0000">elements</font>配列」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>26頁： equalsメソッドの契約に関して、反射的、対象的、推移的、整合的のすべてで、「任意の参照値」を「<font color="#FF0000">nullでない、</font>任意の参照値」に変更。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">27頁： コード内のコメントの「大文字小文字</font><font color="#000099">(case-insensitive)を区別する</font><font color="#000000">」は、「大文字小文字</font><font color="#FF0000">を区別しない(case-insensitive)</font><font color="#000000">」の誤り。</font></li>
+  <li><font color="#000000">28頁： 上から2行目、8行目、9行目の三ヶ所にある「大文字小文字を区別</font><font color="#000099">する</font><font color="#000000">」は、「大文字小文字を区別</font><font color="#FF0000">しない</font><font color="#000000">」の誤り。</font></li>
+  <li>32頁： 「JLS, 15.<font color="#000099">19</font>.2」は、「JLS, 15.<font color="#FF0000">20</font>.2」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>37頁：hashCodeの処方箋のiii.で、「(f ^ (f&nbsp; &gt;&gt;&gt; 32))<b><font color="#3333FF">)</font></b>」は、「(f ^ (f&nbsp; &gt;&gt;&gt; 32))」の誤り(閉じカッコが1つ多い)。</li>
+  <li><font color="#000000">41頁： コード内のﾄPaddedString()メソッドに対するコメントで、「Integer.toString(i)
+&lt;= length」は、「Integer.toString(i)</font><font color="#FF0000">.length()</font><font color="#000000">
+&lt;= length」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">47頁： コードのclone()メソッド内での「</font><font color="#000099">(Entry)</font><font color="#000000">」キャストは不要。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>50頁： 訳注の4行目で、「Coneable」は、「C<font color="#FF0000">l</font>oneable」の誤り。</li>
+  <li><font color="#000000">55頁： コードの後の三行目の「</font><font color="#000099">INTEGER</font><font color="#000000">.MAX_VALUE」は、「</font><font color="#FF0000">Integer</font><font color="#000000">.MAX_VALUE」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">65頁： コード内のComplexコンストラクタは、「private」と宣言されていますが、その宣言を取り除いてパッケージプライベートにします。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">71頁： 上から17行目の「全く同じシグニチャのメソッド」は、「全く同じシグニチャ</font><font color="#FF0000">と戻り値型</font><font color="#000000">のメソッド」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>71頁： 最後の段落の下から4行目で、「<i>forwading method</i>」は、「<i>forwa<font color="#FF0000">r</font>ding
+method</i>」の誤り。</li>
+  <li>79頁：　4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>98頁： 最後の行の「クライアンの」は、「クライアン<font color="#FF0000">ト</font>の」誤り。</li>
+  <li><font color="#000000">103頁： Operationクラスのコードで、PLUS、MINUS、TIMES、DIVIDEがfinal宣言されていませんので、「public
+static Operation」ではなく、「public static </font><font color="#FF0000">final</font><font color="#000000">
+Operation」と宣言します。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">111頁： 項目23の最初の段落の4行目の「これは、</font><font color="#000099">一般原則の特殊な場合であり、エラーが発生したらできるだけ速くエラーを検出するようにすべきです。</font><font color="#000000">」を「これは、</font><font color="#FF0000">エラーが発生したらできるだけ速くエラーを検出するようにすべきであるという一般原則の特殊な場合です。</font><font color="#000000">」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li><font color="#000000">129頁： 第2段落の3行目の「M.S.</font><font color="#000099">,</font><font color="#000000">
+or Ph.D.」は、「M.S. or Ph.D.」の誤り(M.S.の後のカンマを取り除く)。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">129頁： 下から3行目の「ユーティリティもあります</font><font color="#000099">[Doclint]</font><font color="#000000">。」を、「ユーティリティもあります。」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">130頁： 第3段落の最後の行の「</font><font color="#000099">weblint[Weblint}などの</font><font color="#000000">」を削除。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">143頁： 一行目の「java.</font><font color="#000099">util</font><font color="#000000">.ThreadLocal」は、「java.</font><font color="#FF0000">lang</font><font color="#000000">.ThreadLocal」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">148頁： コードの下から3行目の「args.length-1」は、「args.length」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>173頁： 第2段落の3行目で、「IndexOutOfBounds<font color="#000099">例外</font>」は、「IndexOutOfBounds<font color="#FF0000">Exception</font>」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">182頁： 下から4行目の「</font><font color="#3333FF">オブジェクト参照ではなく」</font><font color="#000000">は、「</font><font color="#FF0000">longあるいはdouble以外の</font><font color="#000000">」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>189頁：第2段落の3行目、「バ<font color="#3333FF">ッケ</font>ト」は、「バ<font color="#FF0000">ケッ</font>ト」の誤り。</li>
+  <li><font color="#000000">191頁： 下から11行目の「この級数</font><font color="#000099">の和</font><font color="#000000">は」は、「この級数は」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">191頁： 下から5行目の「Lea</font><font color="#000099">99</font><font color="#000000">」は、「Lea</font><font color="#FF0000">00</font><font color="#000000">」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>199頁：第4段落の1行目、「サブ<font color="#3333FF">ク</font>ループ」は、「サブ<font color="#FF0000">グ</font>ループ」の誤り。</li>
+  <li>199頁：第4段落の最後から2行目、「ライブラリーを使<font color="#3333FF">いなさい</font>」は、「ライブラリーを使<font color="#FF0000">う</font>」の誤り。</li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+  <li>222頁： [Doclint]の項目をすべて以下の[DocCheck]で置き換える。<font color="#009900">（原著の変更内容）</font><FONT color="#FF0000">[DocCheck] <i>Doc Check. </i>Sun Microsystems. October 2001. &lt;http://java.sun.com/j2se/javadoc/doccheck/index.html&gt;</FONT></li>
+  <li>224頁： [Weblint]の項目をすべて削除。<font color="#009900">（原著の変更内容）</font></li>
+</UL>
+<P><a NAME="03Printing"></a><b>第3刷(2002年2月28日発行)</b> &nbsp;</P>
+<UL>
+  <li><font color="#000000">15頁： 第3段落の1行目の「</font><font color="#000099">不変です</font><font color="#000000">ので」を、「</font><font color="#FF0000">初期化後に変更されない</font><font color="#000000">ので」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>19頁： 第2段落内の2箇所の「<font color="#000099">items</font>配列」は、「<font color="#FF0000">elements</font>配列」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>26頁： equalsメソッドの契約に関して、反射的、対象的、推移的、整合的のすべてで、「任意の参照値」を「<font color="#FF0000">nullでない、</font>任意の参照値」に変更。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">27頁： コード内のコメントの「大文字小文字</font><font color="#000099">(case-insensitive)を区別する</font><font color="#000000">」は、「大文字小文字</font><font color="#FF0000">を区別しない(case-insensitive)</font><font color="#000000">」の誤り。</font></li>
+  <li><font color="#000000">28頁： 上から2行目、8行目、9行目の三ヶ所にある「大文字小文字を区別</font><font color="#000099">する</font><font color="#000000">」は、「大文字小文字を区別</font><font color="#FF0000">しない</font><font color="#000000">」の誤り。</font></li>
+  <li>32頁： 「JLS, 15.<font color="#000099">19</font>.2」は、「JLS, 15.<font color="#FF0000">20</font>.2」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">41頁： コード内のﾄPaddedString()メソッドに対するコメントで、「Integer.toString(i)
+&lt;= length」は、「Integer.toString(i)</font><font color="#FF0000">.length()</font><font color="#000000">
+&lt;= length」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">47頁： コードのclone()メソッド内での「</font><font color="#000099">(Entry)</font><font color="#000000">」キャストは不要。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>50頁： 訳注の4行目で、「Coneable」は、「C<font color="#FF0000">l</font>oneable」の誤り。</li>
+  <li><font color="#000000">55頁： コードの後の三行目の「</font><font color="#000099">INTEGER</font><font color="#000000">.MAX_VALUE」は、「</font><font color="#FF0000">Integer</font><font color="#000000">.MAX_VALUE」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">65頁： コード内のComplexコンストラクタは、「private」と宣言されていますが、その宣言を取り除いてパッケージプライベートにします。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">71頁： 上から17行目の「全く同じシグニチャのメソッド」は、「全く同じシグニチャ</font><font color="#FF0000">と戻り値型</font><font color="#000000">のメソッド」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>71頁： 最後の段落の下から4行目で、「<i>forwading method</i>」は、「<i>forwa<font color="#FF0000">r</font>ding
+method</i>」の誤り。</li>
+  <li>79頁：　4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>98頁： 最後の行の「クライアンの」は、「クライアン<font color="#FF0000">ト</font>の」誤り。</li>
+  <li><font color="#000000">103頁： Operationクラスのコードで、PLUS、MINUS、TIMES、DIVIDEがfinal宣言されていませんので、「public
+static Operation」ではなく、「public static </font><font color="#FF0000">final</font><font color="#000000">
+Operation」と宣言します。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">111頁： 項目23の最初の段落の4行目の「これは、</font><font color="#000099">一般原則の特殊な場合であり、エラーが発生したらできるだけ速くエラーを検出するようにすべきです。</font><font color="#000000">」を「これは、</font><font color="#FF0000">エラーが発生したらできるだけ速くエラーを検出するようにすべきであるという一般原則の特殊な場合です。</font><font color="#000000">」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li><font color="#000000">129頁： 第2段落の3行目の「M.S.</font><font color="#000099">,</font><font color="#000000">
+or Ph.D.」は、「M.S. or Ph.D.」の誤り(M.S.の後のカンマを取り除く)。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">129頁： 下から3行目の「ユーティリティもあります</font><font color="#000099">[Doclint]</font><font color="#000000">。」を、「ユーティリティもあります。」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">130頁： 第3段落の最後の行の「</font><font color="#000099">weblint[Weblint}などの</font><font color="#000000">」を削除。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">143頁： 一行目の「java.</font><font color="#000099">util</font><font color="#000000">.ThreadLocal」は、「java.</font><font color="#FF0000">lang</font><font color="#000000">.ThreadLocal」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">148頁： コードの下から3行目の「args.length</font><font color="#000099">-1</font><font color="#000000">」は、「args.length」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>173頁： 第2段落の3行目で、「IndexOutOfBounds<font color="#000099">例外</font>」は、「IndexOutOfBounds<font color="#FF0000">Exception</font>」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">182頁： 下から4行目の「</font><font color="#000099">オブジェクト参照ではなく</font><font color="#3333FF">」</font><font color="#000000">は、「</font><font color="#FF0000">longあるいはdouble以外の</font><font color="#000000">」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">191頁： 下から11行目の「この級数</font><font color="#000099">の和</font><font color="#000000">は」は、「この級数は」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">191頁： 下から5行目の「Lea</font><font color="#000099">99</font><font color="#000000">」は、「Lea</font><font color="#FF0000">00</font><font color="#000000">」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+  <li>222頁： [Doclint]の項目をすべて以下の[DocCheck]で置き換える。<font color="#009900">（原著の変更内容）</font><FONT color="#FF0000">[DocCheck] <i>Doc Check. </i>Sun Microsystems. October 2001. &lt;http://java.sun.com/j2se/javadoc/doccheck/index.html&gt;</FONT></li>
+  <li>224頁： [Weblint]の項目をすべて削除。<font color="#009900">（原著の変更内容）</font></li>
+</UL>
+<P><a NAME="04Printing"></a><b>第4刷(2002年9月25日発行)</b>
+</P>
+<UL>
+  <li><font color="#000000">15頁： 第3段落の1行目の「</font><font color="#000099">不変です</font><font color="#000000">ので」を、「</font><font color="#FF0000">初期化後に変更されない</font><font color="#000000">ので」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>26頁： equalsメソッドの契約に関して、反射的、対象的、推移的、整合的のすべてで、「任意の参照値」を「<font color="#FF0000">nullでない、</font>任意の参照値」に変更。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">27頁： コード内のコメントの「大文字小文字</font><font color="#000099">(case-insensitive)を区別する</font><font color="#000000">」は、「大文字小文字</font><font color="#FF0000">を区別しない(case-insensitive)</font><font color="#000000">」の誤り。</font></li>
+  <li><font color="#000000">28頁： 上から2行目、8行目、9行目の三ヶ所にある「大文字小文字を区別</font><font color="#000099">する</font><font color="#000000">」は、「大文字小文字を区別</font><font color="#FF0000">しない</font><font color="#000000">」の誤り。</font></li>
+  <li>32頁： 「JLS, 15.<font color="#000099">19</font>.2」は、「JLS, 15.<font color="#FF0000">20</font>.2」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>50頁： 訳注の4行目で、「Coneable」は、「C<font color="#FF0000">l</font>oneable」の誤り。</li>
+  <li><font color="#000000">55頁： コードの後の三行目の「</font><font color="#000099">INTEGER</font><font color="#000000">.MAX_VALUE」は、「</font><font color="#FF0000">Integer</font><font color="#000000">.MAX_VALUE」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">71頁： 上から17行目の「全く同じシグニチャのメソッド」は、「全く同じシグニチャ</font><font color="#FF0000">と戻り値型</font><font color="#000000">のメソッド」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>71頁： 最後の段落の下から4行目で、「<i>forwading method</i>」は、「<i>forwa<font color="#FF0000">r</font>ding
+method</i>」の誤り。</li>
+  <li>79頁：　4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>98頁： 最後の行の「クライアンの」は、「クライアン<font color="#FF0000">ト</font>の」誤り。</li>
+  <li><font color="#000000">111頁： 項目23の最初の段落の4行目の「これは、</font><font color="#000099">一般原則の特殊な場合であり、エラーが発生したらできるだけ速くエラーを検出するようにすべきです。</font><font color="#000000">」を「これは、</font><font color="#FF0000">エラーが発生したらできるだけ速くエラーを検出するようにすべきであるという一般原則の特殊な場合です。</font><font color="#000000">」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li><font color="#000000">129頁： 第2段落の3行目の「M.S.</font><font color="#000099">,</font><font color="#000000">
+or Ph.D.」は、「M.S. or Ph.D.」の誤り(M.S.の後のカンマを取り除く)。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">129頁： 下から3行目の「ユーティリティもあります</font><font color="#000099">[Doclint]</font><font color="#000000">。」を、「ユーティリティもあります。」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">130頁： 第3段落の最後の行の「</font><font color="#000099">weblint[Weblint}などの</font><font color="#000000">」を削除。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>173頁： 第2段落の3行目で、「IndexOutOfBounds<font color="#000099">例外</font>」は、「IndexOutOfBounds<font color="#FF0000">Exception</font>」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li><font color="#000000">191頁： 下から5行目の「Lea</font><font color="#000099">99</font><font color="#000000">」は、「Lea</font><font color="#FF0000">00</font><font color="#000000">」の誤り。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+  <li>222頁： [Doclint]の項目をすべて以下の[DocCheck]で置き換える。<font color="#009900">（原著の変更内容）</font><FONT color="#FF0000">[DocCheck] <i>Doc Check. </i>Sun Microsystems. October 2001. &lt;http://java.sun.com/j2se/javadoc/doccheck/index.html&gt;</FONT></li>
+  <li>224頁： [Weblint]の項目をすべて削除。<font color="#009900">（原著の変更内容）</font></li>
+</UL>
+<P><br>
+<a NAME="05Printing"></a><b>第5刷(2003年1月25日発行)</b>
+<br>
+<a NAME="06Printing"></a><b>第6刷(2003年6月20日発行)</b>
+</P>
+<UL>
+  <li>26頁： equalsメソッドの契約に関して、反射的、対象的、推移的、整合的のすべてで、「任意の参照値」を「<font color="#FF0000">nullでない、</font>任意の参照値」に変更。<font color="#009900">（原著の変更内容）</font></li>
+  <li>32頁： 「JLS, 15.<font color="#000099">19</font>.2」は、「JLS, 15.<font color="#FF0000">20</font>.2」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>50頁： 訳注の4行目で、「Coneable」は、「C<font color="#FF0000">l</font>oneable」の誤り。</li>
+  <li>71頁： 最後の段落の下から4行目で、「<i>forwading method</i>」は、「<i>forwa<font color="#FF0000">r</font>ding
+method</i>」の誤り。</li>
+  <li>79頁：　4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>98頁： 最後の行の「クライアンの」は、「クライアン<font color="#FF0000">ト</font>の」誤り。</li>
+  <li><font color="#000000">111頁： 項目23の最初の段落の4行目の「これは、</font><font color="#000099">一般原則の特殊な場合であり、エラーが発生したらできるだけ速くエラーを検出するようにすべきです。</font><font color="#000000">」を「これは、</font><font color="#FF0000">エラーが発生したらできるだけ速くエラーを検出するようにすべきであるという一般原則の特殊な場合です。</font><font color="#000000">」に修正。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li><font color="#000000">129頁： 第2段落の3行目の「M.S.</font><font color="#000099">,</font><font color="#000000">
+or Ph.D.」は、「M.S. or Ph.D.」の誤り(M.S.の後のカンマを取り除く)。</font><font color="#009900">（原著の変更内容）</font></li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>173頁： 第2段落の3行目で、「IndexOutOfBounds<font color="#000099">例外</font>」は、「IndexOutOfBounds<font color="#FF0000">Exception</font>」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+</UL>
+<A name="07Printing"></A><B>第7刷(2003年11月1日発行)<BR>
+<A name="08Printing"></A>第8刷(2004年3月10日発行)<BR>
+<A name="09Printing"></A>第9刷(2004年6月10日発行)</B>
+<dl>
+</dl>
+<UL>
+  <li>50頁： 訳注の4行目で、「Coneable」は、「C<font color="#FF0000">l</font>oneable」の誤り。</li>
+  <li>71頁： 最後の段落の下から4行目で、「<i>forwading method</i>」は、「<i>forwa<font color="#FF0000">r</font>ding
+method</i>」の誤り。</li>
+  <li>79頁：　4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>98頁： 最後の行の「クライアンの」は、「クライアン<font color="#FF0000">ト</font>の」誤り。</li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>173頁： 第2段落の3行目で、「IndexOutOfBounds<font color="#000099">例外</font>」は、「IndexOutOfBounds<font color="#FF0000">Exception</font>」の誤り。<font color="#009900">（原著の変更内容）</font></li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+</UL>
+<P><a NAME="10Printing"></a><b>第10刷(2004年10月20日発行)</b></P>
+<UL>
+  <li>50頁： 訳注の4行目で、「Coneable」は、「C<font color="#FF0000">l</font>oneable」の誤り。</li>
+  <li>79頁：　4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>173頁： 第2段落の3行目で、「IndexOutOfBounds<font color="#000099">例外</font>」は、「IndexOutOfBounds<font color="#FF0000">Exception</font>」の誤り。<font color="#009900">（原著の変更内容）</font>&nbsp;</li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+</UL>
+<A name="11Printing"></A><B>第11刷(2004年12月20日発行)</B>&nbsp;
+<UL>
+  <li>79頁： 4行目の最後の部分で、「されていなクラス」は、「されていな<font color="#FF0000">い</font>クラス」の誤り。</li>
+  <li>96頁： サンプルコード中の「sleaze.f = 6.669e-41」は、「sleaze.f = 6.669e-41<font color="#FF0000">;</font>」(セミコロンが抜けている)の誤り。</li>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+</UL>
+<P><a NAME="12printing"></a><b>第12刷(2005年5月20日発行)</b></P>
+<UL>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>123頁： 4段落目の3行目の「自己定義した」を「自己<font color="#FF0000">型</font>定義した<font color="#FF0000">(s<i>elf-typed</i>)</font>」に修正。</li>
+  <li>123頁： 4段落目の4行目の「自己定義」を「自己<font color="#FF0000">型</font>定義」に修正。</li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+</UL>
+<P><a NAME="13Printing"></a><b>第13刷(2005年12月15日発行)</b>&nbsp;</P>
+<UL>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>162頁： 最後の行の「ありませし」は、「ありませ<font color="#FF0000">ん</font>し」の誤り。</li>
+  <li>169頁： 下から2段落目の１行目の「<font color="#000099">翻訳例外</font>」は、「<font color="#FF0000">例外翻訳</font>」の誤り。</li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+</UL>
+<P><A name="14Printing"></A><B>第14刷(2006年8月10日発行)</B><BR>
+<A name="15Printing"></A><B>第15刷(2007年2月20日発行)</B><BR>
+<A name="16Printing"></A><B>第16刷(2007年8月1日発行)</B></P>
+<UL>
+  <li>111頁： 第2段落の5行目の「可能」を「可能<FONT color="#ff0000">性</FONT>」に修正。</li>
+  <li>202頁： 第3段落の5行目の「明示的なコンストラクタはありませんので」は、「明示的なコンストラクタ<FONT color="#ff0000">で</FONT>はありませんので」の誤り。</li>
+</UL>
+<P><A name="17Printing"></A><B>第17刷(2007年12月25日発行)</B></P>
+<UL>
+  <li>現在なし</li>
+</UL>
+
+<H4>著者紹介</H4>
+第11刷より、索引の後にある著者に関する記述は、以下の通りとなります。
+<P><b>Joshua Bloch</b>(ジョシュア・ブロック)：Google社の主席エンジニア。以前は、Sun
+Microsystems社のDistinguished Engineer、および、Transarc社の上級システムデザイナーであった。JDK
+5.0の言語拡張およびJavaコレクションフレームワークなどの、数多くのJavaプラットフォームの機能の設計および実装をリーディングしてきた。Carnegie-Mellon大学でコンピュータサイエンスの博士号を取得し、Columbia大学でコンピュータサイエンスの学士号を取得している。</P>
+<H4>謝辞</H4>
+誤りの指摘を頂きました次の方々に感謝いたします。
+<BR>
+　長村 徹、中村 正、相馬 純平、遠藤 康裕、小嶋 晴彦、田中 祐一、山下 健司、岩田 城亮、南迫 祐樹</body>
+</html>

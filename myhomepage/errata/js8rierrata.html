@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="Yoshiki Shibata">
+   <META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 10.0.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+   <title>『Javaプログラマーなら習得しておきたい Java SE 8 実践プログラミング』正誤表</title>
+</head>
+<body>
+
+<center>
+<h2>
+<font color="#006600">『Javaプログラマーなら習得しておきたいJava SE 8実践プログラミング』正誤表</font></h2>
+<p>2015年10月10日改訂</center>
+<H4>はじめに</H4>
+<dl>
+  <dd>『Javaプログラマーなら習得しておきたいJava SE 8実践プログラミング』は、校正の際に誤りを見逃していたりするかもしれません。なお、本正誤表では、日本語表現の細かな修正については、掲載していません。また、翻訳時点では発見されていなくて、その後発見された原著の誤りについては、<font color="#009900">（原著の変更内容）</font>として示しています。
+  </dd>
+</dl>
+<a NAME="01Printing"></a><B>第1刷 (2014年9月21日発行)</B><UL>
+  <li>20頁： 上から4行目の「<code>Person</code>インタフェースと<FONT color="#ff0000"><code>Name</code></FONT>インタフェースにより」を、「<code>Person</code>インタフェースと<FONT color="#0000ff"><code>Named</code></FONT>インタフェースにより」に修正。</li>
+  <li>24頁： （練習問題6）3行目の「<code>uncheck</code><FONT color="#ff0000">関数</FONT>」を、「<code>uncheck</code><FONT color="#0000ff">メソッド</FONT>」に修正。</li>
+  <li>31頁： 上から5行目の「（<code><FONT color="#ff0000">Bit</FONT>Integer</code>としての）」を「（<code><FONT color="#0000ff">Big</FONT>Integer</code>としての）」に修正。</li>
+  <li>37頁： 2.7.1節の第2段落の1行目の「<FONT color="#ff0000"><code>ifPresent</code>メソッドには2 つ目の形式があり、関数を受け付けます。</FONT>」を「<FONT color="#0000ff"><code>isPresent</code>メソッドとは別に、関数を受け付ける<code>ifPresent</code>メソッドがあります。</FONT>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>39頁： 真ん中辺りの「<code>Optional&lt;U&gt; = s.f().flatMap(T::g);」を「Optional&lt;U&gt; <FONT color="#0000ff">result</FONT> = s.f().flatMap(T::g);</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>40頁： 真ん中辺りの「<code>Optional&lt;Integer&gt; sum = values.reduce((x, y) -&gt; x
+  + y)</code>」を「<code>Optional&lt;Integer&gt; sum = values.reduce((x, y) -&gt; x + y)<FONT color="#0000ff">;</FONT></code>」に修正（行末にセミコロンを追加）。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>54頁： 2.14節の<code>Predicate</code>の定義の「<code>public interface Predicate {</code>」を、「<code>public interface Predicate<FONT color="#0000ff">&lt;T&gt;</FONT> {</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>56頁： 練習問題11の最後の質問「<FONT color="#ff0000">みなさんは、この収集をどうやって達成することができますか。</FONT>」を「<FONT color="#0000cc">なぜ、<code>Collector</code>で、この収集を行うことができないのでしょうか。</FONT>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>57頁： 1行目の「2.13」を「2.13<FONT color="#0000ff">節</FONT>」に修正。</li>
+  <li>63頁： 表3.1の「他のメソッド」欄の二カ所の「<code><FONT color="#ff0000">chain</FONT></code>」を「<code><FONT color="#0000cc">andThen</FONT></code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>63頁： 表3.1のBinaryOperator&lt;T&gt;の行の「他のメソッド」欄の「<code>andThen</code>」を「<code>andThen<FONT color="#0000cc">、maxBy、minBy</FONT></code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>65頁： 表3.2の下から2行目の「<I>P</I>BinaryOperator　<FONT color="#ff0000">p</FONT>, <FONT color="#ff0000">p</FONT>　<FONT color="#ff0000">p</FONT>　applyAs<I>P</I>」を「<I>P</I>BinaryOperator　<I><FONT color="#0000ff">p</FONT></I>, <I><FONT color="#0000ff">p</FONT></I>　<I><FONT color="#0000ff">p</FONT></I>　applyAs<I>P</I>」に修正（イタリックへ修正）。</li>
+  <li>66頁： ページの真ん中辺りの「次のように、<code>transform</code>を<FONT color="#ff0000">オーバーライド</FONT>しなければならなくなります。」を「次のように、<code>transform</code>を<FONT color="#0000ff">オーバーロード</FONT>しなければならなくなります。」に修正。</li>
+  <li>66頁： ページの真ん中辺りの<code>transform</code>メソッドの引数定義における、「<code>BiFunction&lt;Color, T&gt;</code>」を「<code>BiFunction&lt;Color,
+		  T<FONT color="#0000ff">, Color</FONT>&gt;</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>70頁： 「注意」の最後の行の「練習問題<FONT color="#ff0000">12と13</FONT>」を「練習問題<FONT color="#0000cc">12、13、14</FONT>」に修正。<FONT color="#009900">（原著の変更内容）</FONT></li>
+  <li>78頁： 練習問題4の「<code>Filter</code>という名前を持つ関数型インタフェースが」を「名前に<code>Filter</code>を含む関数型インタフェースが」に修正。
+  <li>79頁： 練習問題6の「<code>BiFunction&lt;Color, T&gt;</code>」を「<code>BiFunction&lt;Color, T<FONT color="#0000ff">, Color</FONT>&gt;</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>80頁： 1行目の「<code>UnaryOperator op = Color::brighter;</code>」を「<code>UnaryOperator<FONT color="#0000cc">&lt;Color&gt;</FONT> op = Color::brighter;</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>80頁： 練習問題10の最後の「<FONT color="#ff0000">ユーティリティに関して、何が言えますか。</FONT>」を「<FONT color="#0000cc">どちらがより役立つでしょうか。</FONT>」に修正。
+  <li>80頁： 練習問題14の1行目の「<FONT color="#ff0000">transformer</FONT>」を「<FONT color="#0000cc">トランスフォーマ</FONT>」に修正。
+  <li>80頁： 練習問題14の3行目の「<code>(x, y, reader) -&gt; reader.<FONT color="#ff0000">get</FONT>(<FONT color="#ff0000">width - x</FONT>, y)</code>」を「<code>(x, y, reader) -&gt; reader.<FONT color="#0000cc">getColor</FONT>(<FONT color="#0000cc">width - (x + 1)</FONT>, y)</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>80頁： 練習問題14の5行目の「<code>(x, y, reader) -&gt; reader.<FONT color="#ff0000">get</FONT>(x, y).grayscale()</code>」を「<code>(x, y, reader) -&gt; reader.<FONT color="#0000cc">getColor</FONT>(x, y).grayscale()</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>80頁： 練習問題14の下から2行目の「<code>Unary<FONT color="#ff0000">Operation</FONT>&lt;Color&gt;</code>」を「<code>Unary<FONT color="#0000cc">Operator</FONT>&lt;Color&gt;</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>102頁： 下のコード例に「<code><FONT color="#0000cc">&lt;?import javafx.geometry.*?&gt;</FONT></code>」を追加。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>103頁： 下から7行目の「<code>HBox</code>と<FONT color="#ff0000">の</FONT>その子」を「<code>HBox</code>とその子」に修正。
+  <li>116頁： 練習問題5の「<code>t -&gt; <FONT color="#ff0000">t</FONT> &gt;= 100, gauge.widthProperty()));</code>」を「<code>t -&gt; <FONT color="#0000cc">t.doubleValue()</FONT> &gt;= 100, gauge.widthProperty()));</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>121頁： 上から6行目の「<code>toNanos</code>、<code>toMillis</code>、<code><FONT color="#ff0000">toSeconds</FONT></code>、」を「<code>toNanos</code>、<code>toMillis</code>、<code><FONT color="#0000cc">getSeconds</FONT></code>、」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>121頁： 表5.1に定義されているメソッドの内、<code>Instant</code>には<code>plusMinutes</code>、<code>plusHours</code>、<code>plusDays</code>、<code>minusMinutes</code>、<code>minusHours</code>、<code>minusDays</code>は定義されていません。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>128頁： 上から13行目の「<code>ZoneId.<FONT color="#ff0000">getAvailableIds</FONT></code>」を「<code>ZoneId.<FONT color="#0000cc">getAvailableZoneIds()</FONT></code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>130頁： 表5.5の最初のメソッドの説明中の「年・月・時・分・秒・ナノ秒」を「年・月・<FONT color="#0000cc">日・</FONT>時・分・秒・ナノ秒」に修正。
+  <li>133頁： メモにある「<code>java.<FONT color="#ff0000">util</FONT>.DateFormat</code>」を「<code>java.<FONT color="#0000ff">text</FONT>.DateFormat</code>」に修正（２カ所）。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>135頁： 表5.9の3行目の「新しいクラスへ」の列の「<code>timeStamp.<FONT color="#ff0000">toLocalDateTime</FONT>()</code>」を「<code>timeStamp.<FONT color="#0000cc">toInstant</FONT>()</code>」に修正。
+  <li>135頁： 表5.9の4行目の「新しいクラスへ」の列の「<code><FONT color="#ff0000">cal.toZonedDateTime</FONT>()</code>」を「<code><FONT color="#0000cc">timeStamp.toLocalDateTime</FONT>()</code>」に修正。
+  <li>135頁： 表5.9の6行目の「古いクラスへ」の列の「<code>Time<FONT color="#ff0000">..</FONT>valueOf(localTime)</code>」を「<code>Time<FONT color="#0000cc">.</FONT>valueOf(localTime)</code>」に修正。（ピリオドが1つ多い）
+  <li>136頁： 練習問題3の「<code>today.with(next(w -&gt; getDayOfWeek().getValue() &lt; 6))</code>」を「<code>today.with(next(w -&gt; <FONT color="#0000cc">w.</FONT>getDayOfWeek().getValue() &lt; 6))</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>136頁： 練習問題8の「<code>ZoneId.<FONT color="#ff0000">getAvailableIds</FONT></code>」を「<code>ZoneId.<FONT color="#0000cc">getAvailableZoneIds()</FONT></code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>136頁： 最後の行の「ローカル時刻の3時5分」を「ローカル時刻の<FONT color="#0000cc">午後</FONT>3時5分」に修正。
+  <li>145頁： 真ん中辺りの次の部分を全部削除：「<FONT color="#ff0000"><code>putIfAbsent</code>はマップされた値（既存の値か、新たに入れられた値のどちらか）を返すので、次のように、2 つの文を1 つの文にまとめられます。<code>map.putIfAbsent(word, new LongAdder()).increment();</code></FONT>」。（<code>putIfAbsent</code>は、値が元々存在しなければnullを返すので）<FONT color="#009900">（原著の変更内容）</FONT>
+  <li>147頁： <code>searchKeys</code>, <code>searchValues</code>、<code>searchEntries</code>の定義で使用されている「<code><FONT color="#ff0000">BiFunction</FONT></code>」を「<code><FONT color="#0000cc">Function</FONT></code>」に修正。（<code>search</code>の<code>BiFunction</code>はそのまま）<FONT color="#009900">（原著の変更内容）</FONT>
+  <LI>152頁： 下から2行目の「<code>CompletableFuture&lt;List&lt;<FONT color="#ff0000">String</FONT>&gt;&gt; links =</code>」を「<code>CompletableFuture&lt;List&lt;<FONT color="#0000ff">URL</FONT>&gt;&gt; links =</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <LI>154頁： 上から9行目の「<code>CompletableFuture&lt;List&lt;<FONT color="#ff0000">String</FONT>&gt;&gt; links</code>」を「<code>CompletableFuture&lt;List&lt;<FONT color="#0000ff">URL</FONT>&gt;&gt; links</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <LI>168頁： 最後の行の「<code>'Hello'.slice(-2.99)</code>」を「<code>'Hello'.substring(-2.99)</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <LI>169頁： 最初の行の「<code>'Hello'.slice(-2)</code>」を「<code>'Hello'.substring(-2)</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <LI>201頁： 上から2行目の「<code>@ReadOnly&gt; Person</code>」を「<code>@ReadOnly Person&gt;</code>」に修正。<FONT color="#009900">（原著の変更内容）</FONT>
+  <LI>206頁： 練習問題3の「<code>floor<FONT color="#ff0000">Mode</FONT></code>」を「<code>floor<FONT color="#0000ff">Mod</FONT></code>」に修正。
+  <LI>228頁： 上から7行目の「<code><FONT color="#ff0000">Bit</FONT>Integer</code>」を「<code><FONT color="#0000ff">Big</FONT>Integer</code>」に修正。
+  <LI>235頁： 「ASCII文字、<FONT color="#ff0000">いんさつ</FONT>可能な, 195」を、「ASCII文字、<FONT color="#0000ff">印刷</FONT>可能な, 195」に修正。
+</UL>
+
+<H4>謝辞</H4>
+誤りの指摘を頂きました次の方々に感謝いたします。
+<blockquote>北口 友紀、山下 健司、劉 珂、宮原 良介、今井 克則（<A href="http://blog.glatts.com/blog/study/">GLATTS勉強会</A>）、加藤 裕、鈴本 悠輝</blockquote>
+</body>
+</html>
