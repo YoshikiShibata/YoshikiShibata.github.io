@@ -1,1 +1,0 @@
-# YoshikiShibata.github.io
