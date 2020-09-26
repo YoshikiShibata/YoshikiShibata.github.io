@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="Yoshiki Shibata">
+<META http-equiv="Content-Style-Type" content="text/css">
+   <title>『新世代Javaプログラミングガイド』正誤表</title>
+</head>
+<body>
+
+<center>
+<h2>
+<font color="#006600">『新世代Javaプログラミングガイド』正誤表</font></h2>
+<p>2020年4月13日改訂</center>
+<H4>はじめに</H4>
+『新世代Javaプログラミングガイド版』は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。<br><br>
+
+<a NAME="01Printing"></a><B>第1刷 (2020年3月11日発行)</B><br>
+<UL>
+<li>iii頁：下から3行目の「<FONT color="#FF0000"><code>Class Data Sharing</code></FONT>」（コードフォント）を「<FONT color="#0000FF"><em>Class Data Sharing</em></FONT>」（イタリック）に修正（2020.4.13）
+<li>4頁：コード例にある「<code>LocalDateTime dateTime = <FONT color="#FF0000">new</FONT> LocalDateTime.now()</code>」（二か所）を「<code>LocalDateTime dateTime = LocalDateTime.now()</code>」に修正（2020.3.20）</li>
+<li>56頁：コード例にある「<code>age > 10 ? <FONT color="#FF0000">"Kid" : "Not a Kid"</FONT>; </code>」（二か所）を「<code>age > 10 ? <FONT color="#0000FF">"Not a Kid" : "Kid"</FONT>;</code>」に修正（2020.3.20） </li>
+<li>56頁：コード例にあるコメント「<code>// StringとList<<FONT color="#FF0000">person</FONT>>が入力、Optional<Integer>が戻り値</code>」（二か所）を「<code>// StringとList<<FONT color="#0000FF">Person</FONT>>が入力、Optional<Integer>が戻り値</code>」に修正（2020.3.20） </li>
+<li>65頁：下から7行目の「・すべてのオブジェクトはヒープに保存されま<FONT color="#FF0000">すオ</FONT>ブジェクトを参照するローカル変数 ...」を「<br>・すべてのオブジェクトはヒープに保存されま<FONT color="#0000FF">す。<br>・オ</FONT>ブジェクトを参照するローカル変数 ...<br>」に修正（2020.3.20）</li>
+<li>75頁：コード例にあるコメント「<code>// HttpClientは<FONT color="#FF0000">HttpRequests</FONT>を送信して、HttpResponseを利用可能にします</code>」を「<code>// HttpClientは<FONT color="#0000FF">HttpRequest</FONT>を送信して、HttpResponseを利用可能にします</code>」に修正（2020.3.20）
+<li>76頁：8行目と10行目の「<code><FONT color="#FF0000">get</FONT>HttpClient</code>」を「<code><FONT color="#0000FF">new</FONT>HttpClient</code>」に修正（2020.3.20）</li>
+<li>80頁：三つ目のコード例中の「<code>.timeout(Duration.ofSeconds(240<FONT color="#FF0000">)</FONT></code>」を「<code>.timeout(Duration.ofSeconds(240<FONT color="#0000FF">))</FONT></code>」に修正（2020.3.20）
+<li>82頁：上から5行目（コード例は除く）の「<code>BodyHandlers.<FONT color="#FF0000">discard()</FONT></code>を使って」を「<code>BodyHandlers.<FONT color="#0000FF">discarding()</FONT></code>を使って」に修正（2020.3.20）
+<li>82頁：上から14行目（コード例は除く）の「<code><FONT color="#FF0000">discard</FONT></code>」を「<code><FONT color="#0000FF">discarding</FONT></code>」に修正（2020.3.20）
+<li>87頁：一番下のコード例中の「<code>main(String[] <FONT color="#FF0000">uri</FONT>)</code>」を「<code>main(String[] <FONT color="#0000FF">args</FONT>)</code>」に修正（2020.3.20）</li>
+<li>87頁：一番下のコード例中の「<code>info<FONT color="#FF0000">@</FONT>ejavaguru@gmail.com</code>」を「<code>info<FONT color="#0000FF">.</FONT>ejavaguru@gmail.com</code>」に修正（2020.3.20）</li>
+<li>128頁：コード例中の「<code>case BOTTLE: damage <FONT color="#FF0000">=</FONT> 20;</code>」を「<code>case BOTTLE: damage <FONT color="#0000FF">+=</FONT> 20;</code>」に修正（2020.3.20）
+<li>158頁：コード例中のコンストラクタ宣言「<code>public <FONT color="#FF0000">Emp</FONT>(String name, int age)</code>」を「<code>public <FONT color="#0000FF">EmpPOJO</FONT>(String name, int age)</code>」に修正（2020.3.20）</li>
+<li>158頁：コード例中のメソッド宣言「<code>public void setName()</code>」を「<code>public void setName(<FONT color="#0000FF">String name</FONT>)</code>」に修正（2020.3.20）</li>
+<li>158頁：コード例中のメソッド宣言「<code>public void setAge()</code>」を「<code>public void setAge(<FONT color="#0000FF">int age</FONT>)</code>」に修正（2020.3.20）</li>
+<li>163頁：上から10行目（コード例を除く）の「デコパイル」を「デコ<FONT color="#0000FF">ン</FONT>パイル」に修正（2020.3.20）</li>
+<li>181頁：最初のコード例中の「<code>key -> key.<FONT color="#FF0000">uppercase()</FONT>;</code>」を「<code>key -> key.<FONT color="#0000FF">toUpperCase()</FONT>;</code>」に修正（2020.3.20）</li>
+<li>182頁：下から4行目（コード例は除く）の「<code>toUpper<FONT color="#FF0000">c</FONT>ase</code>メソッド」を「<code>toUpper<FONT color="#0000FF">C</FONT>ase</code>メソッド」に修正（2020.3.20）</li>
+</UL>
+
+<H4>謝辞</H4>
+誤りの指摘を頂きました次の方々に感謝いたします。
+<blockquote>大平 直宏（@oohira）</blockquote>
+</body>
+</html>
