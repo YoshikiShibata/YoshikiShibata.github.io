@@ -1,0 +1,153 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+   <meta name="Author" content="Yoshiki Shibata">
+   <meta name="GENERATOR" content="Mozilla/4.7 [ja] (Win95; I) [Netscape]">
+   <title>Java MessagingToolへようこそ</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#FF0000" alink="#000088">
+
+<center><b><font color="#3333FF"><font size=+1>Java MessagingToolへようこそ</font></font></b></center>
+
+<hr SIZE=4 WIDTH="100%">
+<center><font color="#FF0000">バージョン2.43(JDK1.1.8 &amp; JDK1.2.2対応版)</font>
+<br><a href="MessagingTool.html#MsgSend">Message Sender(1.00)リリース</a>
+<br>最終更新日 2000年3月6日</center>
+
+<hr SIZE=4 WIDTH="100%">
+<center><font color="#FF0000"><font size=-1>「Java Press」 Vol.7 (技術評論社)の「Javaフリーウェア/シェアウエア
+カフェ」で紹介されました。</font></font></center>
+
+<hr SIZE=4 WIDTH="100%">
+<p><b>MessagingToolとは</b>
+<ul><img SRC="http://jars.developer.com/images/25perc.gif" NOSAVE height=95 width=115 align=RIGHT><font size=-1>MessagingToolは、PCやワークステーション間でメッセージを交換するためのツールです。メッセージを交換する為のサーバーを必要とせず、MessagingToolを動作させているPCやワークステーションに直接メッセージを送ることができます。主な機能は、</font>
+<ul>
+<li>
+<font size=-1>複数の相手へ同時にメッセージを送信することができます。</font></li>
+
+<li>
+<font size=-1>接続されているサブ・ネットワークへメッセージの同報を行うことができます。</font></li>
+
+<li>
+<font size=-1>席を離れて留守にする場合には、「留守録メッセージ」を残すことができます。他の人はあなたが残した留守録メッセージを取り出す事が可能です。</font></li>
+
+<li>
+<font size=-1>MessagingToolを動作させている同僚の状態を容易に知ることができ、また、留守であるかも容易に知ることができます。</font></li>
+
+<li>
+<font size=-1>仮想的な電子会議室を作ることができます。</font></li>
+
+<li>
+<font size=-1>ファイルを直接転送することができます。</font></li>
+
+<li>
+<font size=-1>Swing版では、デスクトップにスティキー・ノート（付箋紙)を貼ることが出来ます。</font></li>
+</ul>
+</ul>
+<b>ダウンロード</b>
+<ul><font size=-1>MessagingToolを構成するファイルは、msgtool.jarファイルにすべてまとめてあります。Windows
+95/98/NTの場合には、自己解凍形式になっていますので、ダウンロードに解凍してmsgtool.jarファイルを取り出し下さい。</font>
+<br>&nbsp;
+<ul>
+<li>
+<font size=-1><a href="msgtool.jar">msgtool.jar</a></font></li>
+
+<li>
+<font size=-1><a href="msgtool.exe">Windows 95/98/NT 4.0(自己解凍exeファイル)</a></font></li>
+</ul>
+</ul>
+<b>リリース・ノート</b>
+<ul><font size=-1>今までの<a href="ReleaseNotes.html">リリース・ノート</a>です。ただし、日本語にはなっていません。</font></ul>
+<b>起動方法</b>
+<ul>
+<li>
+<b><font size=-1>JDK1.1.8用AWTバージョン</font></b></li>
+
+<br><font size=-1>MessagingToolを起動するには<a href="http://www.javasoft.com/products/jdk/1.1/jre/index.html">JRE
+1.1.8</a>(Java Runtime Environment)が必要ですので、JavaSoftからダウロードしてインストールして下さい。その際に、Windows95/NT環境の場合には<b><font color="#3333FF">jre1_1_8-win-</font><font color="#FF0000">i</font><font color="#3333FF">.exe</font></b>をダウンロードして下さい。JREがインストールされましたら、以下の方法で起動できます。</font>
+<br><font size=-1>　</font>
+<ul><font size=-1>Unix:</font>
+<ul><font size=-1>% cd &lt;msgtool.jarをインストールしたディレクトリ></font>
+<br><font size=-1>% jre -cp msgtool.jar MessagingTool &amp;</font>
+<br><font size=-1>　</font></ul>
+<font size=-1>Windows 95 / 98 / NT:</font>
+<ul><font size=-1>> cd &lt;msgtool.jarをインストールしたディレクトリ></font>
+<br><font size=-1>> jrew -cp msgtool.jar MessagingTool</font>
+<br><font size=-1>　</font></ul>
+</ul>
+<font size=-1>(注) jreおよびjrewコマンドがサーチパス上に無い場合には、フルパスで指定して下さい。</font>
+<br>&nbsp;
+<li>
+<b><font size=-1>JDK1.1.8用Swingバージョン</font></b></li>
+
+<br><font size=-1>Swing版を使用するには、<a href="http://www.javasoft.com/products/jdk/1.1/jre/index.html">JRE1.1.8</a>と<a href="http://java.sun.com/products/jfc/download.html">Swing1.1.1</a>が必要です。Swing版を動作させるには、Swing
+1.1.1に含まれるswingall.jarファイルが必要です。msgtool.jarとswingall.jarファイルを一つのディレクトリーに入れたら、以下の方法で起動で出来ます。</font>
+<br>&nbsp;
+<ul><font size=-1>Unix:</font>
+<ul><font size=-1>% cd &lt;msgtool.jarとswingall.jarをインストールしたディレクトリ></font>
+<br><font size=-1>% jre -cp msgtool.jar:swingall.jar MessagingTool <b>-swing</b>
+&amp;</font>
+<br><font size=-1>　</font></ul>
+<font size=-1>Windows 95 / 98 / NT:</font>
+<ul><font size=-1>> cd &lt;msgtool.jarとswingall.jarをインストールしたディレクトリ></font>
+<br><font size=-1>> jrew -cp msgtool.jar;swingall.jar MessagingTool <b>-swing</b></font></ul>
+</ul>
+<font size=-1>(注) jreおよびjrewコマンドがサーチパス上に無い場合には、フルパスで指定して下さい。</font>
+<br>&nbsp;
+<li>
+<b><font size=-1>JDK1.2.2用AWTバージョン</font></b></li>
+
+<br><font size=-1>MessagingToolを起動するには<a href="http://www.javasoft.com/products/jdk/1.2/jre/index.html">JRE
+1.2.2</a>(Java Runtime Environment)が必要ですので、JavaSoftからダウロードしてインストールして下さい。その際に、Windows95/NT環境の場合には<font color="#FF0000">国際版である</font><b><font color="#3333FF">jre1_2_2-win-</font><font color="#FF0000">i</font><font color="#3333FF">.exe</font></b>をダウンロードして下さい。JREがインストールされましたら、以下の方法で起動できます。</font>
+<br><font size=-1>　</font>
+<ul><font size=-1>Unix:</font>
+<ul><font size=-1>% cd &lt;msgtool.jarをインストールしたディレクトリ></font>
+<br><font size=-1>% java -cp msgtool.jar MessagingTool &amp;</font>
+<br><font size=-1>　</font></ul>
+<font size=-1>Windows 95 / 98 / NT:</font>
+<ul><font size=-1>> cd &lt;msgtool.jarをインストールしたディレクトリ></font>
+<br><font size=-1>> java -cp msgtool.jar MessagingTool</font>
+<br><font size=-1>　</font></ul>
+</ul>
+<font size=-1>(注) javaコマンドがサーチパス上に無い場合には、フルパスで指定して下さい。</font>
+<br>&nbsp;
+<li>
+<b><font size=-1>JDK1.2.2用Swingバージョン</font></b></li>
+
+<br><font size=-1>MessagingToolを起動するには<a href="http://www.javasoft.com/products/jdk/1.2/jre/index.html">JRE
+1.2.2</a>(Java Runtime Environment)が必要ですので、JavaSoftからダウロードしてインストールして下さい。その際に、Windows95/NT環境の場合には<font color="#FF0000">国際版である</font><b><font color="#3333FF">jre1_2_2-win-</font><font color="#FF0000">i</font><font color="#3333FF">.exe</font></b>をダウンロードして下さい。JREがインストールされましたら、以下の方法で起動できます。</font></ul>
+
+<ul>
+<ul><font size=-1>Unix:</font>
+<ul><font size=-1>% cd &lt;msgtool.jarをインストールしたディレクトリ></font>
+<br><font size=-1>% java -cp msgtool.jar MessagingTool -swing &amp;</font>
+<br><font size=-1>　</font></ul>
+<font size=-1>Windows 95 / 98 / NT:</font>
+<ul><font size=-1>> cd &lt;msgtool.jarをインストールしたディレクトリ></font>
+<br><font size=-1>> java -cp msgtool.jar MessagingTool -swing</font>
+<br><font size=-1>　</font></ul>
+</ul>
+<font size=-1>(注) javaコマンドがサーチパス上に無い場合には、フルパスで指定して下さい。</font></ul>
+<b>使用方法</b>
+<ul><font size=-1>日本語版の<a href="guide.zip">ユーザーガイド</a>(MS Word形式)は、まだドラフト版で完成していません。申し訳ありませんが、<a href="HowToUse.html">英語版</a>も一緒に参照願います。なお、ダウロードされたmsgtool.jarファイルには、英語版と日本語版の両方のMessagingToolが含まれていますので、日本語環境で動作させれば、メニューやメッセージ等はすべて日本語で表示されます。</font></ul>
+
+<hr SIZE=4 WIDTH="100%">
+<br><b>バグ</b>
+<blockquote><font size=-1><a href="bugs.html">バグ情報 (英語)</a></font></blockquote>
+
+<hr SIZE=4 WIDTH="100%">
+<br><b>フィードバック</b>
+<blockquote><font size=-1>ご感想をお送り下さい｡<form ACTION="http://cgi01.u-page.so-net.ne.jp/public/m-conv/m-conv.cgi" METHOD="POST"><input TYPE="hidden" NAME="sonet_send_mail" value="yshibata@ca2.so-net.ne.jp"><input TYPE="hidden" NAME="sonet_ret_html" value="http://www02.so-net.ne.jp/~yshibata/msgtool/thank.html"><input TYPE="hidden" NAME="sonet_send_subject" value="MessagingTool Feedback">お名前</font>
+<br><input SIZE="30" NAME="お名前">
+<br><font size=-1>電子メールアドレス</font>
+<br><input SIZE="50" NAME="mailaddrs">
+<br><font size=-1>メッセージ</font>
+<br><textarea ROWS="4" COLS="50" NAME="mess"></textarea>
+<br><input TYPE="RESET" VALUE="内容をクリア" ><input TYPE="SUBMIT" VALUE="送信" ></form></blockquote>
+
+<hr SIZE=4 WIDTH="100%">
+<br><font size=-1>Copyright (c) 1997 - 2000 Yoshiki Shibata</font>
+<br><font size=-1>All rights reserved.</font>
+</body>
+</html>

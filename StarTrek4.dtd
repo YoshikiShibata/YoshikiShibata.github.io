@@ -1,0 +1,15 @@
+<!-- DTD for StarTrek data -->
+<!ELEMENT Series (Episode+)>
+<!ATTLIST Series Title CDATA #REQUIRED>
+<!ELEMENT Episode (Title?, StarDate?)>
+<!ATTLIST Episode 
+	Number   CDATA #REQUIRED
+	Title    CDATA #IMPLIED
+	StarDate CDATA #IMPLIED
+>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT StarDate (#PCDATA)>
+<!ENTITY ST "StarTrek">
+<!ENTITY TNG "StarTrek: The Next Generation">
+<!ENTITY DS9 "StarTrek: Deep Space 9">
+<!ENTITY VOY "StarTrek: Voyager">

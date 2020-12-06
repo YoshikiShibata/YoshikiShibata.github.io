@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE Series SYSTEM "StarTrek4.dtd">
+<!-- StarTrek : The Next Generation Episodes -->
+<Series Title="&TNG;">
+	<Episode Number="90" 
+			 Title="Galaxy&apos;s Child" 
+			 StarDate="44614.6"/>
+	<Episode Number="85">
+		<Title><![CDATA[Data's Day]]></Title>
+		<StarDate>44390.1</StarDate>
+	</Episode>
+ </Series>
+ 

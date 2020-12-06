@@ -1,0 +1,561 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.05 [ja] (Win95; I) [Netscape]">
+   <TITLE>MessagingTool: How To Use</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<!--This file created 11:57  96/08/24 by Claris Home Page  version 1.0 Beta 1--><X-SAS-WINDOW TOP=25 BOTTOM=457 LEFT=4 RIGHT=534>
+<CENTER><B><FONT SIZE=+1>MessagingTool User's Guide for V1.70</FONT></B></CENTER>
+
+<CENTER><B>25 October 1997</B></CENTER>
+
+
+<P><B><FONT SIZE=+1>Contents:</FONT></B>　
+<UL><A HREF="#1">1. Gettng Started</A>　 　
+<UL><A HREF="#1.2">1.1 Setting Your Name</A>　
+<BR><A HREF="#1.3">1.2 Sending Hello Message</A>　
+<BR><A HREF="#1.4">1.3 Editing Address Cache</A>　</UL>
+<A HREF="#2">2. Basic Functions</A>　
+<UL><A HREF="#2.1">2.1 Naming Recipients</A>　
+<BR><A HREF="#2.2">2.2 Sending A Message</A>　
+<BR><A HREF="#2.3">2.3 Receiving A Message</A>　
+<BR><A HREF="#2.4">2.4 Properties Window</A>　
+<BR><A HREF="#2.5">2.5 Address Cache Window</A>　
+<BR><A HREF="#2.6">2.6 Recipient Hints Window</A>　
+<BR><A HREF="#2.7">2.7 Recorded Message Hints Window</A>　
+<BR><A HREF="#2.8">2.8 Messaging Dialog Window</A>　
+<BR><A HREF="#2.9">2.9 Sending Window</A>　
+<BR><A HREF="#2.10">2.10 OnLine Window</A></UL>
+<A HREF="#3">3. Advanced Topics</A>　
+<UL><A HREF="#3.1">3.1 Automatically Updating Address Cache</A>　
+<BR><A HREF="#3.2">3.2 Adding Up Recipients From Popup Menu</A>
+<BR><A HREF="#3.3">3.3 Broadcast A Message</A>
+<BR><A HREF="#3.4">3.4 Relay Broadcast</A>
+<BR><A HREF="#3.5">3.5 Search for a user</A>　</UL>
+<A HREF="#4">4. Meeting Room</A>
+<UL><A HREF="#4.1">4.1 Overview</A>
+<BR><A HREF="#4.2">4.2 Create Or Join A Room</A>
+<BR><A HREF="#4.3">4.3 Basic Functions</A>
+<BR><A HREF="#4.4">4.4 Delete A Room</A></UL>
+</UL>
+<A NAME="1"></A><B><FONT SIZE=+1>1. Getting Started</FONT></B>　
+<UL>This chapter shows how to send a simple message in the simplest way.　</UL>
+<A NAME="1.2"></A><B><FONT SIZE=+1>1.1 Setting Your Name　</FONT></B>　
+<BLOCKQUOTE>When you run MessagingTool, <FONT COLOR="#0000FF">MessagingTool
+window</FONT> below will appear.　
+<CENTER><IMG SRC="gifs/MAINWINDOW.GIF" NOSAVE HEIGHT=398 WIDTH=343 ALIGN=ABSBOTTOM>　</CENTER>
+
+<CENTER>Fig.2 <FONT COLOR="#0000FF">MessagingTool window</FONT></CENTER>
+</BLOCKQUOTE>
+
+<BLOCKQUOTE>At first, you need to specify your user name which is used
+as the sender name of a message. Show <FONT COLOR="#0000FF">Properties</FONT>
+<FONT COLOR="#0000FF">window</FONT> below by choosing <FONT COLOR="#DD0000">Properties
+...</FONT><B> </B>menu from <FONT COLOR="#DD0000">Edit</FONT> menu, and
+type your name in <FONT COLOR="#DD0000">User Name</FONT> field, and click
+<FONT COLOR="#DD0000">Set</FONT> button.　
+<CENTER><IMG SRC="gifs/PROPERTIES.GIF" NOSAVE HEIGHT=269 WIDTH=304>　</CENTER>
+
+<CENTER>Fig.3 <FONT COLOR="#0000FF">Properties window</FONT></CENTER>
+</BLOCKQUOTE>
+<A NAME="1.3"></A><B><FONT SIZE=+1>1.2 Sending Hello Message</FONT></B>　
+<UL>If you have a friend who is running MessagingTool on his or her machine,
+then type in the IP address of the machine into To: field. In Fig.4, the
+IP address is 192.168.0.2. Then type in Hello in <FONT COLOR="#0000FF">Message
+subwindow</FONT><FONT COLOR="#000000">:</FONT>　
+<CENTER><IMG SRC="gifs/HELLO1.GIF" NOSAVE HEIGHT=404 WIDTH=346>　</CENTER>
+
+<CENTER>Fig.4 Typing IP address and Hello message</CENTER>
+
+
+<P><FONT COLOR="#000000">Then click </FONT><FONT COLOR="#DD0000">Deliver</FONT><FONT COLOR="#000000">
+button. The message("Hello") is sent to 192.168.0.2, and the log of sending
+message is shown as Fig.5 below:</FONT>　
+<CENTER><IMG SRC="gifs/HELLO2.GIF" NOSAVE HEIGHT=404 WIDTH=346>　</CENTER>
+
+<CENTER>Fig.5 Successfull sending Hello</CENTER>
+
+
+<P><FONT COLOR="#000000">If you cannot find another MessagingTool, try
+sending a message to your machine by specifing your IP address. Please
+note that your IP address is shown in the first line in the Log Area. Fig.6
+shows the result:</FONT>　
+<CENTER><IMG SRC="gifs/HELLO3.GIF" NOSAVE HEIGHT=404 WIDTH=346>　</CENTER>
+
+<CENTER>Fig.6 Sending a message to self.</CENTER>
+
+
+<P>In Fig.6, the Hello message is sent to the same machine. Please note
+that the received message is shown as well as the log of sending the message.
+Because you recived the message you sent, a Messaging Dialog window is
+also popped up. About Messaging Dialog window, please see <A HREF="#2.8">2.8</A>.　</UL>
+<A NAME="1.4"></A><B><FONT SIZE=+1>1.3 Editing Address Cache</FONT></B>　
+<UL>Now you understand the simplest way to send a message to another MessagingTool.
+However, remembering IP addresses is very difficult. So you should assign
+an name to an IP address. Open <FONT COLOR="#0000FF">Address Cache window</FONT>
+by selecting <FONT COLOR="#DD0000">Address Cache ...</FONT> from <FONT COLOR="#DD0000">Edit</FONT>
+menu:　
+<CENTER><IMG SRC="gifs/ADDRESS1.GIF" NOSAVE HEIGHT=210 WIDTH=264>　</CENTER>
+
+<CENTER>Fig.7 <FONT COLOR="#0000FF">Address Cache window</FONT></CENTER>
+
+
+<P>Suppose that 192.168.0.2 is Emiko's PC. So type in Emiko and 192.168.0.2
+as Name and Address respectively:　
+<CENTER><IMG SRC="gifs/ADDRESS2.GIF" NOSAVE HEIGHT=210 WIDTH=264>　</CENTER>
+
+<CENTER>Fig.8 Specify Name and Address</CENTER>
+
+
+<P>Then click <FONT COLOR="#DD0000">Add</FONT> button and <FONT COLOR="#DD0000">Set</FONT>
+button. Now Emiko is added in the Cache File, Emiko can be used in <FONT COLOR="#DD0000">To:</FONT>
+field instead of 192.168.0.2:
+<BR>　
+<CENTER><IMG SRC="gifs/HELLO4.GIF" NOSAVE HEIGHT=423 WIDTH=346>　</CENTER>
+
+<CENTER>Fig.9 Specify a name instead of an IP address</CENTER>
+
+
+<P>All entries in the Address Cache can be poped up as Recipient Hint if
+you click the right-most mouse button over the <FONT COLOR="#FF0000">To:</FONT>
+label.
+<CENTER><IMG SRC="gifs/POPUP1.GIF" NOSAVE HEIGHT=219 WIDTH=236></CENTER>
+
+<CENTER>Fig.9-2 Popup hint</CENTER>
+</UL>
+<A NAME="2"></A><B><FONT COLOR="#000000"><FONT SIZE=+1>2. Basic Functions</FONT></FONT></B>　
+<UL><FONT COLOR="#000000">In this chapter, basic functions of MessagingTool
+are described.</FONT>　</UL>
+<A NAME="2.1"></A><B><FONT SIZE=+1>2.1 Naming Recipients</FONT></B>　
+<BLOCKQUOTE>Recipients are specified by name in <FONT COLOR="#DD0000">To:</FONT>
+field. The name may be any of the followings:　
+<UL>
+<LI>
+The recipient name may be an arbitrary name that is described along with
+an associated network address of the recipient's machine in the address
+cache file. The contents of the address cache file can be modified with
+<FONT COLOR="#DD0000">Address Cache ...</FONT> from <FONT COLOR="#DD0000">Edit</FONT>
+menu.　</LI>
+
+<LI>
+You may specify an IP address of the recipient's machine. An example would
+be 129.249.53.58.　</LI>
+
+<LI>
+You may also specify the host name of the recipient's machine. An example
+would be ncc1701.dsp.ksp.fujixerox.co.jp.　</LI>
+</UL>
+</BLOCKQUOTE>
+<A NAME="2.2"></A><B><FONT SIZE=+1>2.2 Sending A Message</FONT></B>　
+<BLOCKQUOTE>To send a message, fills in <FONT COLOR="#DD0000">To:</FONT>
+field and the <FONT COLOR="#0000FF">Message Subwindow</FONT>, and then
+click <FONT COLOR="#DD0000">Deliver</FONT> button.　
+
+<P>The <FONT COLOR="#DD0000">To:</FONT> field is a list of recipients separated
+by commas(,). If there are multiple recipients, <FONT COLOR="#DD0000">To:</FONT>
+field is automatically included in the text of the message as it is sent
+to each recipient.　
+
+<P>When <FONT COLOR="#DD0000">Deliver</FONT> button is clicked, a header
+is put in the <FONT COLOR="#0000FF">Log Subwindow</FONT> indicating what
+time the message was sent and to whom it was sent. For each recipient the
+tool displays the result of the attempted message delivery. If the delivery
+was successful, the result is "<B>(received)</B>"; otherwise the result
+is "<B>(failed)</B>". If the message was successfully received by at least
+one recipient, the text of the message is then displayed in the <FONT COLOR="#0000FF">Log
+Subwindow</FONT>, and the <FONT COLOR="#0000FF">Message Subwindow</FONT>
+is cleared.　
+
+<P>The MessagingTool does not eliminate duplicated recipients, so if a
+recipient appears more than once in <FONT COLOR="#DD0000">To:</FONT> field,
+the recipient will receive more than one copy of the message.　
+
+<P>When sending a message, the MessagingTool uses the contents of <FONT COLOR="#DD0000">User
+Name</FONT> field in the <FONT COLOR="#0000FF">Properties window</FONT>
+(Fig.3) as the sender name.　
+
+<P>If the <FONT COLOR="#0000FF">Message Subwindow</FONT> is empty, a empty
+message will be sent but the recipient's MessagingTool will not display
+the message or notify the recipient. This allows the sender to determine
+if the recipient is running the MessagingTool before actually sending a
+message.　</BLOCKQUOTE>
+<A NAME="2.3"></A><B><FONT SIZE=+1>2.3 Receiving A Message</FONT></B>　
+<BLOCKQUOTE>When a message is received, a header appears in the <FONT COLOR="#0000FF">Log
+Subwindow</FONT> indicating what time the message was received and who
+it was from, following by the text of the message.　
+
+<P>If <FONT COLOR="#DD0000">Not In Office</FONT> checkbox is checked, <FONT COLOR="#0000FF">Recorded
+Message Subwindow</FONT><B> </B>becomes visible while <FONT COLOR="#DD0000">To:</FONT>
+field becomes invisible. If the MessagingTool receives a message while
+<FONT COLOR="#DD0000">Not In Office</FONT> checkbox is checked, it will
+send a recorded message back to the sender. The recorded message is specified
+in <FONT COLOR="#0000FF">Recorded Message Subwindow</FONT>. If <FONT COLOR="#0000FF">Recorded
+Message Subwindow</FONT> is empty, a standard recorded message which is
+"<B>I'm not in my office</B>" will be sent back. All recorded messages
+are labeled with the phrase "<B>Recorded Message:</B>".　
+<CENTER><IMG SRC="gifs/NOTIN1.GIF" NOSAVE HEIGHT=423 WIDTH=346>　</CENTER>
+
+<CENTER>Fig.11 Check <FONT COLOR="#DD0000">Not In Office</FONT></CENTER>
+
+
+<P>If <FONT COLOR="#DD0000">Activate On Reception</FONT><B> </B>checkbox
+in the <FONT COLOR="#0000FF">Properties window</FONT> is checked, either
+the <FONT COLOR="#0000FF">Reception Dialog window</FONT> or a <FONT COLOR="#0000FF">Messaging
+Dialog window</FONT> will show up each time a message is received.　</BLOCKQUOTE>
+<A NAME="2.4"></A><B><FONT SIZE=+1>2.4 Properties Window</FONT></B>　
+<UL><FONT COLOR="#0000FF">Properties window</FONT> is used to specify several
+properties of MessagingTool. To show it up, choose <FONT COLOR="#DD0000">Properties
+...</FONT> from <FONT COLOR="#DD0000">Edit</FONT> menu.　</UL>
+
+<BLOCKQUOTE>
+<CENTER><IMG SRC="gifs/PROPERTIES.GIF" NOSAVE HEIGHT=269 WIDTH=304></CENTER>
+
+<CENTER>Fig.12 <FONT COLOR="#0000FF">Properties window</FONT></CENTER>
+
+
+<P><FONT COLOR="#DD0000">User Name</FONT> is used as sender name.　
+
+<P>If <FONT COLOR="#DD0000">Activate On Reception</FONT> checkbox is checked,
+either the <FONT COLOR="#0000FF">Reception Dialog window</FONT> or a <FONT COLOR="#0000FF">Messaging
+Dialog window</FONT> will show up each time a message is received.
+<BR>　
+<CENTER><IMG SRC="gifs/DIALOG1.GIF" NOSAVE HEIGHT=50 WIDTH=143></CENTER>
+
+<CENTER>Fig.13 <FONT COLOR="#0000FF">Reception Dialog window</FONT></CENTER>
+
+
+<P>If <FONT COLOR="#DD0000">Beep On Reception</FONT> is checked, a beep
+sound is played each time a message is received. For PC, you need a Sound
+card to play beep sound.　
+
+<P><FONT COLOR="#DD0000">Deliver Key</FONT> is used to send a message.
+Instead of clicking <FONT COLOR="#DD0000">Deliver</FONT> button, you can
+send a message by pressing a function key specified here.
+
+<P><FONT COLOR="#FF0000">Log Messages</FONT> is used to save all messages
+into files. If <FONT COLOR="#FF0000">Log Messages</FONT> is checked, <FONT COLOR="#FF0000">Max
+Log Files</FONT> will be enabled so that you can specify how many files
+are used for saving messages. Eveytime when you invoke the MessagingTool,
+a new file is selected for saving messages and the oldest file will be
+deleted if the total number of files exceeds over the value of <FONT COLOR="#FF0000">Max
+Log Files</FONT>.　
+
+<P><FONT COLOR="#DD0000">Font Name</FONT>, <FONT COLOR="#DD0000">Font Sytle</FONT>,
+and <FONT COLOR="#DD0000">Font Size</FONT> are used to specify what kind
+of font should be used for MessagingTool.　</BLOCKQUOTE>
+<A NAME="2.5"></A><B><FONT SIZE=+1>2.5 Address Cache window</FONT></B>　
+<UL><FONT COLOR="#0000FF">Address Cache Window</FONT> is used to modify
+the Address Cache file. To show it up, choose <FONT COLOR="#DD0000">Address
+Cache ...</FONT> from <FONT COLOR="#DD0000">Edit</FONT> menu.　</UL>
+
+<BLOCKQUOTE>
+<CENTER><IMG SRC="gifs/ADDRESS1.GIF" NOSAVE HEIGHT=210 WIDTH=264></CENTER>
+
+<CENTER>Fig.14 Address Cache window</CENTER>
+
+
+<P>In <FONT COLOR="#DD0000">Name</FONT> field, a name is specified. In
+<FONT COLOR="#DD0000">Address</FONT> field, either of an IP address or
+an host name which can be found via DNS must be specified. <FONT COLOR="#FF0000">Sort
+Key</FONT> is used to sort names for the popup hints and the OnLine list.
+Normally you can leave it blank.　
+
+<P><FONT COLOR="#DD0000">Add</FONT> will register Name, Soft Key, and Address.　
+
+<P><FONT COLOR="#DD0000">Delete</FONT> will delete a selected pair of Name,
+Sort Key, and Address.　
+
+<P><FONT COLOR="#DD0000">Update</FONT> will update Sort Key and Address
+of a selected name.　
+
+<P><FONT COLOR="#DD0000">Cancel</FONT> will cancel all modifications　
+
+<P><FONT COLOR="#DD0000">Set</FONT> will save all modifications into the
+Address Cache file.　</BLOCKQUOTE>
+<A NAME="2.6"></A><B><FONT SIZE=+1>2.6 Recipient Hints</FONT></B> W<B><FONT SIZE=+1>indow</FONT></B>　
+<BLOCKQUOTE><FONT COLOR="#0000FF">Recipient Hints window</FONT> is used
+to add addtional popup hints for To: field. To show it up, choose <FONT COLOR="#DD0000">Recipient
+Hints ...</FONT> from <FONT COLOR="#DD0000">Edit</FONT> menu. To show the
+popup hints, click over <FONT COLOR="#DD0000">To:</FONT> field label with
+the rightmost button of mouse.　
+<CENTER><IMG SRC="gifs/TOHINT1.GIF" NOSAVE HEIGHT=187 WIDTH=264></CENTER>
+
+<CENTER>Fig.15 <FONT COLOR="#0000FF">Recipient Hints window</FONT></CENTER>
+
+
+<P>In <FONT COLOR="#DD0000">Recipient</FONT> field, a string is specified.
+For example, you can specify a name of recipient. Or you can specify multiple
+recipients such as "Yoshiki, Emiko". In this case, you might leave <FONT COLOR="#FF0000">Members</FONT>
+field blank. If you leave <FONT COLOR="#FF0000">Members</FONT> field blank,
+a string specified as <FONT COLOR="#DD0000">Recipient</FONT> field will
+be just copied into To: field when the string is selected from a Popup
+menu.
+
+<P>Suppose that you want to group some recipients into a group and you
+want to have the group name in the Popup menu rather than a long string
+of members such as "Emiko, Takashi, Tadao, David, Smith, Lewis". In this
+case, specify a group name into <FONT COLOR="#FF0000">Recipient</FONT>
+field and specify members into <FONT COLOR="#FF0000">Members</FONT> field:
+<BLOCKQUOTE><FONT COLOR="#FF0000">Recipient:</FONT>　　　 MyGroup
+<BR><FONT COLOR="#FF0000">Members:</FONT>　　　 　Emiko, Takashi, Tadao,
+David, Smith, Lewis</BLOCKQUOTE>
+In this way, "MyGroup" will be listed in the Popup menu, but selecting
+it will copy Members into <FONT COLOR="#FF0000">To:</FONT> field.
+
+<P><FONT COLOR="#DD0000">Add</FONT> will register a string.　
+
+<P><FONT COLOR="#DD0000">Delete</FONT> will delete a selected string.　
+
+<P><FONT COLOR="#DD0000">Update</FONT> will replace a selected string with
+a new string.　
+
+<P><FONT COLOR="#DD0000">Cancel</FONT> will cancel all modifications.　
+
+<P><FONT COLOR="#DD0000">Set</FONT> will save all modifications into the
+Recipient Hints file.　</BLOCKQUOTE>
+<A NAME="2.7"></A><B><FONT COLOR="#000000"><FONT SIZE=+1>2.7 Recorded Message
+Hints Window</FONT></FONT></B>　
+<UL><FONT COLOR="#0000FF">Recorded Message Hints window</FONT> is used
+ot modify the popup hints for Recorded Message subwindow. To show it up,
+choose <FONT COLOR="#DD0000">Recorded Message Hints ...</FONT> from <FONT COLOR="#DD0000">Edit</FONT>
+menu. To show the popup hints over <FONT COLOR="#DD0000">Recorded Message</FONT>
+label with the rightmost button of mouse.
+<BR>　
+<CENTER><IMG SRC="gifs/RECORDED.GIF" NOSAVE HEIGHT=162 WIDTH=262></CENTER>
+
+<CENTER>Fig.16 <FONT COLOR="#0000FF">Recorded Message Hints window</FONT></CENTER>
+
+
+<P>In <FONT COLOR="#DD0000">Message</FONT> field, a recorded message is
+specified. Now only one line message is allowed.　
+
+<P><FONT COLOR="#DD0000">Add</FONT> will register a recorded message.　
+
+<P><FONT COLOR="#DD0000">Delete</FONT> will delete a selected recorded
+message.　
+
+<P><FONT COLOR="#DD0000">Update</FONT> will replace a selected recorded
+message with a new recorded message.　
+
+<P><FONT COLOR="#DD0000">Cancel</FONT> will cancel all modifications.　
+
+<P><FONT COLOR="#DD0000">Set</FONT> will save all modifications into the
+Recorded Message Hints file.　</UL>
+<A NAME="2.8"></A><B><FONT SIZE=+1>2.8 Messaging Dialog Window</FONT></B>　
+<UL>If <FONT COLOR="#DD0000">Messaging Dialog</FONT> is selected in <FONT COLOR="#0000FF">Properties
+window</FONT>, a <FONT COLOR="#0000FF">Messaging Dialog window</FONT> will
+be shown up when a message is received. A <FONT COLOR="#0000FF">Messaging
+Dialog window</FONT> has it own sender's address internally: You don't
+have to specify a recipient with the window. If you want to specify additional
+recipients, you can specify them in <FONT COLOR="#DD0000">Additional To:</FONT>
+field.
+<BR>　
+<CENTER><IMG SRC="gifs/DIALOG2.GIF" NOSAVE HEIGHT=390 WIDTH=385></CENTER>
+
+<CENTER>Fig.17 <FONT COLOR="#0000FF">Messaging Dialog window</FONT></CENTER>
+
+
+<P>You can also show up a existing <FONT COLOR="#0000FF">Messaging Dialog
+window</FONT> by choosing it from <FONT COLOR="#DD0000">Messaging Dialog</FONT>
+in <FONT COLOR="#DD0000">Window</FONT> menu.　</UL>
+<A NAME="2.9"></A><B><FONT SIZE=+1>2.9 Sending Window</FONT></B>　
+<UL>A <FONT COLOR="#0000FF">Sending window</FONT> is a window for typing
+a long message. To show a Sending window, choose <FONT COLOR="#DD0000">Another
+...</FONT> from <FONT COLOR="#DD0000">Window</FONT> menu.
+<BR>　
+<CENTER><IMG SRC="gifs/DIALOG3.GIF" NOSAVE HEIGHT=145 WIDTH=398></CENTER>
+
+<CENTER>Fig.18 <FONT COLOR="#0000FF">Sending window</FONT></CENTER>
+
+
+<P>Note that a sending window has only Message subwindow so that you can
+enlarge the sending window to type in a long message.　</UL>
+<A NAME="2.10"></A><B><FONT SIZE=+1>2.10 OnLine Window</FONT></B>
+<UL>The <FONT COLOR="#3333FF">OnLine window</FONT> is a window which shows
+which persons registered in the Address Cache are running MessagingTool.
+To show the OnLine window, choose <FONT COLOR="#FF0000">OnLine List ...</FONT>
+from <FONT COLOR="#FF0000">Window</FONT> menu.
+<CENTER><IMG SRC="gifs/ONLINE1.GIF" NOSAVE HEIGHT=162 WIDTH=132></CENTER>
+
+<CENTER>Fig.19 <FONT COLOR="#3333FF">OnLine window</FONT></CENTER>
+
+
+<P>In Fig.19, four persons are listed: All of them are running MessagingTool.
+When one of them checks Not In Office checkbox on his or her MessagingTool,
+"x" will be appeared in front of his or her name.
+<CENTER><IMG SRC="gifs/ONLINE2.GIF" NOSAVE HEIGHT=162 WIDTH=132></CENTER>
+
+<CENTER>Fig.20 Yoshiki is not in office.</CENTER>
+When you have received a message, "!" will be appeared in front of the
+sender's name, only if all following conditions are met:
+<BR>　
+<OL>
+<LI>
+The <FONT COLOR="#3333FF">MessagingTool window</FONT> is icondified(in
+case of Windows 95/NT, closed on the taskbar)</LI>
+
+<LI>
+<FONT COLOR="#FF0000">Activate On Reception</FONT> in the Properties is
+either not checked or checked with <FONT COLOR="#FF0000">Reception Dialog</FONT></LI>
+
+<LI>
+<FONT COLOR="#000000">A</FONT><FONT COLOR="#3333FF"> Messaging Dialog</FONT><FONT COLOR="#000000">
+for the sender is not opened.</FONT></LI>
+</OL>
+
+<CENTER><IMG SRC="gifs/ONLINE3.GIF" NOSAVE HEIGHT=162 WIDTH=132></CENTER>
+
+<CENTER>Fig.21 A message from Yoshiki is received.</CENTER>
+If you double click a name in the <FONT COLOR="#3333FF">OnLine window</FONT>,
+a <FONT COLOR="#3333FF">Messaging Dialog</FONT> for the selected name will
+appear.</UL>
+<A NAME="3"></A><B><FONT SIZE=+1>3 Advanced Topics</FONT></B>　
+
+<P><A NAME="3.1"></A><B><FONT SIZE=+1>3.1 Automatically Updating Address
+Cache</FONT></B>　
+<UL>When a message is received from a sender whose IP address is not found
+in the Address Cache file, the sender's <FONT COLOR="#DD0000">User Name</FONT>
+and IP address will be registered in the Address Cache file automatically
+unless Address Cache window is opened.　
+
+<P>If necessary, you can change the automatically registered name with
+<FONT COLOR="#0000FF">Address Cache window</FONT>.　</UL>
+<A NAME="3.2"></A><B><FONT SIZE=+1>3.2 Adding Up Recipients From Popup
+Menu</FONT></B>　
+<UL>Usually a hint is selected from the recipients Popup menu, the hint
+will replace contents in <FONT COLOR="#DD0000">To:</FONT> field or <FONT COLOR="#DD0000">Additional
+To:</FONT> field. But sometime you want to add up recipients from Popup
+menu. To do that, click anywhere in To: field and press SHIFT-Key. While
+pressing the SHIFT-key, selecting a hint from the recipients Popup menu
+will add up recipients in <FONT COLOR="#DD0000">To:</FONT> field.</UL>
+<A NAME="3.3"></A><B><FONT COLOR="#000000"><FONT SIZE=+1>3.3 Broadcast
+A Message</FONT></FONT></B>
+<UL>You can broadcast a message over your local sub-network which is a
+IP subnetwork. To broadcast a message, "<B>ALL</B>" must be specified in
+the <FONT COLOR="#CC0000">To:</FONT> field. The message will be sent to
+your local sub-network. A message is broadcasted via UDP, so if the message
+is too long, broadcasting it fails.
+
+<P>When a message is broadcasted, "[broadcast message]" string will be
+always prepended to the original message.
+<CENTER><IMG SRC="gifs/BROAD1.GIF" NOSAVE HEIGHT=404 WIDTH=346></CENTER>
+
+<CENTER>Fig.22 The result of broadcasting a message.</CENTER>
+</UL>
+<A NAME="3.4"></A><B><FONT SIZE=+1>3.4 Relay Broadcast</FONT></B>
+<UL>If you specify "<B>ALL-AREAS</B>" instead of "<B>ALL</B>" in the To:
+field. a message will be relayed to all your friends reigstered in your
+<FONT COLOR="#3333FF">Address Cache</FONT>, as well as it will be broadcasted
+to a local sub-network.
+
+<P>When a MessagingTool receives a relay broacast message, it will broacast
+the message again to its local sub-network, and the message will be relayed
+to all recipients registered in the <FONT COLOR="#3333FF">Address Cache</FONT>
+of the MessagingTool.
+
+<P>You might be afraid that a message might be repeatedly sent over all
+sub-networks. Don't worry about it. Actually algorithm for relay broacast
+is more sophicated so that a message will never be processed twice by a
+MessagingTool.
+
+<P>Because of the nature of broadcast, you must be very careful about a
+message: All persons running MessagingTool will receive the message.
+
+<P>Note that if you broadcast a message, its recipients will never send
+recorded messages back to you even if some of them actually checks <FONT COLOR="#FF0000">Not
+In Office</FONT> checkbox.</UL>
+<A NAME="3.5"></A><B><FONT SIZE=+1>3.5 Search For A User</FONT></B>
+<UL>From V1.70, you can find users of MessagingTool. To show <FONT COLOR="#3333FF">Search
+Window</FONT>, choose <FONT COLOR="#FF0000">User Search ...</FONT> from
+<FONT COLOR="#FF0000">Tool</FONT> menu.
+<CENTER><IMG SRC="gifs/SEARCH.GIF" NOSAVE HEIGHT=196 WIDTH=345 ALIGN=TEXTTOP></CENTER>
+
+<CENTER>Fig.23 <FONT COLOR="#3333FF">Search Window</FONT></CENTER>
+
+
+<P>By clicking <FONT COLOR="#FF0000">Search</FONT> button, a string typed
+in <FONT COLOR="#FF0000">Name</FONT> field will be sent to other MessagingTool
+as query. On reception of the query, each MessagingTool checks whether
+the string is included either in the name specified in the <FONT COLOR="#FF0000">Sender
+Name</FONT> field in <FONT COLOR="#3333FF">Properties Window </FONT><FONT COLOR="#000000">or
+in E-Mail address which can be found only for a registered copy of MessagingTool.　</FONT><FONT COLOR="#3333FF">
+</FONT>If the string is included, the MessagingTool will report its IP
+address back.
+<CENTER><IMG SRC="gifs/SEARCH2.GIF" NOSAVE HEIGHT=196 WIDTH=345 ALIGN=TEXTTOP></CENTER>
+
+<CENTER>Fig.24 Search Result</CENTER>
+
+
+<P>Note that any character will be interpreted literally except its case.
+No special characters such as '*' or '?' is not supported.</UL>
+<A NAME="4"></A><B><FONT SIZE=+1>4. Meeting Room</FONT></B>
+
+<P><A NAME="4.1"></A><B><FONT SIZE=+1>4.1 Overview</FONT></B>
+<UL>From V1.70, MessagingTool has a virtual meeting room where you can
+exchange messages among participants to the room. Before V1.70, if you
+want to discuss something among some of your friends, you have to list
+all of them in <FONT COLOR="#FF0000">To:</FONT> field. In addition, they
+need to list others also. With a meeting room, you don't need to specify
+any recipients because a message will be delivered to all participants
+to the room.
+
+<P>There is no server which creates a meeting room like a web-based chat
+system where a chat room is created. A meeting room of MessagingTool exists
+in each MessagingTool.</UL>
+<A NAME="4.2"></A><B><FONT SIZE=+1>4.2 Create Or Join A Room</FONT></B>
+<UL>To join or create a meeting room, choose <FONT COLOR="#FF0000">Join
+Meeting Room ...</FONT> from <FONT COLOR="#FF0000">Tool</FONT> menu.
+<CENTER><IMG SRC="gifs/NEWROOM.GIF" NOSAVE HEIGHT=118 WIDTH=273 ALIGN=TEXTTOP></CENTER>
+
+<CENTER>Fig.25 <FONT COLOR="#3333FF">Join Meeting Room window</FONT></CENTER>
+　
+
+<P>If you click over <FONT COLOR="#FF0000">Room Name:</FONT> label with
+the right-most mouse button, a list of open meeting rooms will be popped
+up. Choose one of open meeting rooms or type in a room name. Then click
+<FONT COLOR="#FF0000">Join</FONT> button. <FONT COLOR="#FF0000">Private
+Room:</FONT> checkbox means that you are going to join a private meeting
+room which will never be listed in the popup menu.</UL>
+<A NAME="4.3"></A><B><FONT SIZE=+1>4.3 Basic Functions</FONT></B>
+<UL>Once you join or create a meeting room, a Meeting Room window will
+appear. Please note that all meetings you have once joined will be listed
+under <FONT COLOR="#FF0000">Meeting Room</FONT> menu under <FONT COLOR="#FF0000">Window</FONT>
+menu. In addition, you can show a list of meeting rooms by choosing <FONT COLOR="#FF0000">Meeting
+Room List ...</FONT> from <FONT COLOR="#FF0000">Window</FONT> menu.
+<CENTER><IMG SRC="gifs/ROOM1.GIF" NOSAVE HEIGHT=394 WIDTH=343 ALIGN=TEXTTOP></CENTER>
+
+<CENTER>Fig.26 <FONT COLOR="#3333FF">Meeting Room window</FONT></CENTER>
+　
+<BR><FONT COLOR="#FF0000">Deliver</FONT> button sends a message to all
+participants of the room.
+<BR><FONT COLOR="#FF0000">Participants</FONT> button will show a <FONT COLOR="#3333FF">Participants
+window</FONT> where all participants are listed.
+<BR><FONT COLOR="#FF0000">Leave</FONT> button leaves the room. If you leave
+the room, the room will automatically disappear. But you can also open
+the room again from either <FONT COLOR="#FF0000">Meeting Room</FONT> menu
+or the <FONT COLOR="#3333FF">Meeting Room List window</FONT><FONT COLOR="#000000">
+where you must do double-click the room. If you shows a room where you
+have left, there will be </FONT><FONT COLOR="#FF0000">Join</FONT><FONT COLOR="#000000">
+button instead of </FONT><FONT COLOR="#FF0000">Leave</FONT><FONT COLOR="#000000">
+button.</FONT></UL>
+<A NAME="4.4"></A><B><FONT SIZE=+1>4.4 Delete A Room</FONT></B>
+<UL>As explain in the Overview, a meeting room exits in each MessagingTool.
+So, deleting the room means deleting it from all MessagingTools. If there
+is at least one MessagingTool where the room is joined, the deletion will
+never be completed. Therefore before deleting a room, make sure there is
+no participant.
+
+<P>To delete a meeting room, choosing <FONT COLOR="#FF0000">Delete Meeting
+Room ...</FONT> from <FONT COLOR="#FF0000">Tool</FONT> menu.</UL>
+
+<HR ALIGN=LEFT SIZE=4 WIDTH="100%"><FONT SIZE=-1>Copyright (c) 1997 by
+Yoshiki Shibata</FONT>
+<BR><FONT SIZE=-1>All rights reserved.</FONT>
+<UL>　
+<BR>　
+<BR>　
+<BR>　</UL>
+
+</BODY>
+</HTML>

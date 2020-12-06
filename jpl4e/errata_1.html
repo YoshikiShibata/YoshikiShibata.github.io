@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<title>Errata in the First Printing of The Java Programming Language, Fourth Edition</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+</head>
+
+<body>
+
+<h1 align="center">Errata for<br>
+<i>The Java Programming Language</i></h1>
+<h2 align="center">Fourth Edition</h2>
+<p align="center"><i>by</i></p>
+<h2 align="center">Ken Arnold, James Gosling and David Holmes</h2>
+<h2 align="center">First Printing</h2>
+<p><br>
+</p>
+<p align="right"><i>Get your facts first, then you can distort them as you
+please.</i><br>
+-- Mark Twain</p>
+<hr>
+<p>This page contains the technical errata -- those things that are wrong or
+lead you astray -- in the First Printing of the book. You may also want to view the <a href="minor_errata_1.html">minor
+errata list</a>, especially before you email us about an error.</p>
+<p>You can tell which printing you have by looking at the bottom of the
+copyright page (the page that faces the dedication page, and starts with
+&quot;Copyright © 2006 by Sun Microsystems, Inc.&quot;). The last line on this
+page gives the printing number and date.</p>
+<p>If you find an error in the book, please check to see if it is already known
+before reporting it. If you do not find it in the list, please <a href="mailto:dholmes@ieee.org">mail
+us</a> the relevant information, including page numbers. All errata will be
+fixed in the next possible printing. We are thankful to <a href="acknowledgements.html">all
+those who have reported errata</a>.</p>
+<p>Errata for all printings:</p>
+<ul>
+<li>Errata for First Printing (this document)<a href=errata_2.html><li>Errata for Second Printing</a><a href=errata_3.html><li>Errata for Third Printing</a></ul>
+<ul>
+</ul>
+<hr>
+<h3><small>C<small>HAPTER</small> 1:</small> A Quick Tour</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 2:</small> Classes and Objects</h3>
+<ul>
+  <li><b>Clarification</b>: On page 46 when discussing constant variables there
+    is one corner case that is not discussed. For the case of a final <tt>String</tt>
+    variable, an initialization expression that evaluates to <tt>null</tt> is
+    not a constant expression and any such initialized variable is not a
+    constant variable and its value is not used by the compiler to replace a
+    reference to the variable. Of course, initializing a final <tt>String</tt>
+    variable with the value <tt>null</tt> is a rather pointless thing to do, so
+    this case has no practical significance and wasn't considered worth
+    mentioning.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 3:</small> Extending Classes</h3>
+<ul>
+  <li>On page 82, where the second sentence of the second paragraph states:
+    <blockquote>
+      At this stage references to other <b>members</b> of the current object are
+      permitted, ...
+    </blockquote>
+    it should say &quot;references to other <b>fields</b> of the current
+    object&quot;. Only fields have the restriction on forward referencing, while
+    other members (methods and nested types) do not.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 4:</small> Interfaces</h3>
+<ul>
+  <li>Page 126. The final sentence prior to section 4.4 has a missing comma that
+    could cause it to be misinterpreted. The sentence should read:
+    <blockquote>
+      If a declared method differs only in return type from an inherited method,
+      or if two inherited methods differ only in return type<b>,</b> where one
+      type is not a subtype of the other, you will get a compile-time error.
+    </blockquote>
+    The subtype condition applies to both situations described, not just the
+    second.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 5:</small> Nested Classes and Interfaces</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 6:</small> Enumeration Types</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 7:</small> Tokens, Values and Variables</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 8:</small> Primitives as Types</h3>
+<ul>
+  <li>Page 189: In the description of the <tt>valueOf</tt> method it states that
+    using this method is equivalent to the two step process of parsing the
+    string and constructing a new wrapper object from that value. That isn't
+    quite correct. The <tt>valueOf</tt> method need not create a new object, and
+    as discussed on page 185, in Section&nbsp; 8.1.1, for some values it is
+    guaranteed to always return the same object. The sentence is amended as
+    follows:
+    <blockquote>
+      This is equivalent to the two-step process of parsing the string and using
+      that value to construct a new wrapper object; except that a new object
+      need not be created.
+    </blockquote>
+  </li>
+  <li>Page 197: In the description of <tt>codePointBefore</tt> where it
+    says &quot;the code point defined <b>at</b> the given index&quot; it should
+    say &quot;the code point defined <b>preceding</b> the given index&quot;.</li>
+  <li>Page 197: In the description of <tt>codePointCount(char[] seq, int start,
+    int count)</tt>, where it says &quot;to <tt>seq[start+length]</tt>&quot; it
+    should say &quot;to <tt>seq[start+count-1]</tt>&quot;</li>
+  <li>Page 197: In the description of <tt>codePointCount(CharSequence seq, int
+    start, int end)</tt> where it says <tt>seq.charAt(end)</tt>, it should say <tt>seq.charAt(end-1)</tt>.
+  <li>Page 197: In the description of <tt>offsetByCodePoints(char[] seq, int
+    start, int count, int index, int numberOfCodePoints)</tt>, where it says
+    &quot;to <tt>seq[start+length]</tt>&quot; it should say &quot;to <tt>seq[start+count-1]</tt>&quot;</li>
+  <li>Page 199: In the table, the entry for <tt>char</tt> should read
+    &quot;\u0000 to \u007F&quot;, not &quot;\u0000 to \u00FF&quot;</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 9:</small> Operators and Expressions</h3>
+<ul>
+  <li>Page 205. In discussing the multiple evaluation of the <tt>where()</tt>
+    method we state &quot;once to determine the index on the right-hand side and
+    a second time to determine the index on the left-hand side&quot;. This might
+    give the impression that the right-hand side of the expression is evaluated
+    before the left-hand side, which is incorrect - the left-hand index is
+    evaluated first. The use of &quot;left-hand&quot; and &quot;right-hand&quot;
+    should be switched around.</li>
+  <li>Page 212: At the top of the page, the final example for the conditional
+    operator should read:
+    <blockquote>
+      &quot;if one expression was <tt><b>Body</b></tt> and the other was <tt>String</tt>,
+      then <tt>Object</tt> would be the resulting type&quot;
+    </blockquote>
+    <p>The example using <tt>int</tt> was incorrect because the <tt>int</tt>
+    would be boxed to become <tt>Integer</tt> and the common parent of <tt>Integer</tt>
+    and <tt>String</tt> is an intersection type comprising <tt>Serializable</tt>
+    and <tt>Comparable</tt>. Often the exact type of the expression is not what
+    is important, so long as that type is compatible with the use of the
+    conditional expression in a statement.</p>
+  <li>Page 218. In the discussion of &quot;Numeric Promotion&quot; the
+    cross-reference to &quot;Section 9.1 on page 201&quot; should be to
+    &quot;Section 9.3.2 on page 215&quot;.</li>
+  <li>Page 227. In the third paragraph the two references to &quot;step
+    1&quot; should say &quot;step <b>2</b>&quot;</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 10:</small> Control Flow</h3>
+<ul>
+  <li>On page 232 we discuss the <tt>switch</tt> statement and how an enum type
+    can be used as the switch expression, with enum constants as the case
+    labels. There is an omission in this description due to a late change in the
+    Java Language Specification, third edition. When the switch expression is of
+    an enum type, the case labels must be unqualified enum constants of that
+    type. Allowing the omission of the qualifier on the constant is a nice
+    convenience, but requiring that it be omitted leads to a strange
+    inconsistency: the enum contant in the label must be unqualified yet any use
+    of that same enum constant within the statements for that case must be
+    qualified (unless the enum constants have been imported through a static
+    import).</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 11:</small> Generic Types</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 12:</small> Exceptions and Assertions</h3>
+<ul>
+  <li>Page 301: In the final example of controlling assertions, the <tt>-da</tt>
+    control for the <tt>com.acme.products</tt> package, is missing the final
+    ellipse that indicates it refers to a package. The complete example should
+    show:<code>
+    <pre>-da:com.acme.Plotter -ea:com.acme... -da:com.acme.products... -ea:com.acme.products.Rocket
+</pre>
+    </code></li>
+</ul>
+<h3><small>C<small>HAPTER</small> 13:</small> Strings and Regular Expressions</h3>
+<ul>
+  <li>Page 306: In the description of the <tt>subsequence</tt> method,
+    where it says &quot;If <tt>start</tt> is less than <tt>end</tt>&quot; should
+    read &quot;If <tt><b>end</b></tt> is less than <tt><b>start</b></tt>&quot;.</li>
+  <li>Page 308: After the table, where it says &quot;if the value is less than
+    0xFFFF&quot;, it should say &quot;if the value is <b>not greater</b> than
+    0xFFFF&quot;.</li>
+  <li>Page 317: In the discussion of the parsing methods, the numeric base
+    ranges from 2 to <b>36</b>, not 32 as stated.</li>
+  <li>Page 324: The description of the <tt>split</tt> method is incomplete,
+    it should read:<br>
+    <blockquote>
+      <b><tt>public String[] split(CharSequence input, int limit)</tt></b><br>
+      A convenience method that splits the given input sequence around matches
+      of this pattern. Useful when you do not need to reuse the matcher. The <tt>limit</tt>
+      affects the number of times the pattern will be applied to the input to
+      create the array—see the <tt>String</tt> method <tt>split(String regex,
+      int limit)</tt> on page 314 for a detailed example of how the limit
+      applies.
+    </blockquote>
+  </li>
+  <li>Page 324: In the description of the <tt>matches</tt> method, where it says
+    &quot;parser or matcher&quot; it should say &quot;<b>pattern</b> or
+    matcher&quot;.</li>
+  <li>Page 336: In the description of <tt>codePointBefore</tt> where it
+    says &quot;the code point defined <b>at</b> the given index&quot; it should
+    say &quot;the code point defined <b>preceding</b> the given index&quot;.</li>
+  <li>Page 336: In the description of <tt>codePointCount(int start, int end)</tt>
+    where it says <tt>this.charAt(end)</tt>, it should say <tt>this.charAt(end-1)</tt>.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 14:</small> Threads</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 15:</small> Annotations</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 16:</small> Reflection</h3>
+<ul>
+  <li>Page 405: In the third paragraph, second sentence, the opening phrase
+    &quot;All classes implement&quot; should read &quot;The class <tt>Class</tt>
+    implements&quot;.</li>
+  <li>Page 428: In Section 16.9.4, at the end of the first paragraph where it
+    says &quot;<tt>getComponentType</tt>&quot;, it should say &quot;<tt>getGenericComponentType</tt>&quot;.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 17:</small> Garbage Collection and Memory</h3>
+<ul>
+  <li>Page 458: In the last sentence before Exercise 17.2, where it says
+    &quot;specifically in Section 21.9 on page 594&quot;, it should say
+    &quot;specifically in Section 21.8.4 on page 592&quot;.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 18:</small> Packages</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 19:</small> Documentation Comments</h3>
+<ul>
+  <li>Page 485. In the opening discussion of the <tt>@throws</tt> tag we state
+    that it is a good idea to declare all exceptions in a methods <tt>throws</tt>
+    clause, whether or not they are required. This contradicts the advice we
+    gave in the Exceptions chapter, on page 284, and what we state in the
+    discussion about inheriting <tt>@throws</tt> comments on page 490. The
+    advice on page 485 is out of date - the general rule these days is to not
+    declare unchecked exceptions in the <tt>throws</tt> clause, but just
+    document them using the <tt>@throws</tt> comment. That said, sometimes their
+    inclusion in the <tt>throws</tt> clause provides an additional reminder to
+    the programmer maintaining a piece of code that it has some unusual
+    exception behaviour - the expectation being that a programmer is perhaps
+    more likely to focus on the code and see the <tt>throws</tt> clause, than to
+    read the documentation comments.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 20:</small> The I/O Package</h3>
+<ul>
+  <li>Page 545/546: The information concerning the <tt>File</tt> class and that
+    it implements <tt>Comparable</tt> was not updated to account for the
+    generification of <tt>Comparable</tt>. Prior to generics, the <tt>File</tt>
+    class defined two <tt>compareTo</tt> methods: one taking a <tt>File</tt>
+    argument and one taking an <tt>Object</tt> argument, with the latter being
+    required for the <tt>Comparable</tt> interface. With generics <tt>File</tt>
+    implements <tt>Comparable&lt;File&gt;</tt> and so only the <tt>compareTo(File
+    other)</tt> method is required or defined. You may be wondering how the
+    method <tt>compareTo(Object other)</tt> can be removed from the class, as
+    surely that would break compatibility? It would. And even though that method
+    is not defined in the source code for the class, the compiler generates it
+    in the bytecode. This is an example of a <em>bridge method</em> and these
+    are discussed in Appendix A on pages 746-747.</li>
+</ul>
+<h3><small>C<small>HAPTER</small> 21:</small> Collections</h3>
+<ul>
+  <li>Page 592: In the second paragraph the description of how access-order
+    works is reversed. It should say the &quot;<font size="3">map is sorted from
+    the <b>least</b> recently accessed entry to the <b>most</b> recently
+    accessed entry&quot;. Hence the suitability to use a a LRU cache.</font>
+  <li>Page 596: In Section 21.9.2, the second sentence states &quot;All values
+    in the map must come from the same enum type.&quot; The values it is
+    referring to are the enum values, which are in fact the keys of the map, as
+    per the previous sentence. To clarify this the sentence now reads &quot;All
+    keys in the map must come from the same enum type.&quot;.</li>
+  <li>Page 601: The final sentence of Section 21.10.2 gives an example:
+    <blockquote>
+      For example, if you expose your information as an unmodifiable list, it
+      can be searched and sorted without your having to define search and sort
+      methods.
+    </blockquote>
+    Of course you can not sort an unmodifiable list. The example should read:
+    <blockquote>
+      For example, if you expose your information as an unmodifiable list, it
+      can be searched and <b>queried</b> without your having to define search
+      and <b>query</b> methods.
+    </blockquote>
+  </li>
+</ul>
+<h3><small>C<small>HAPTER</small> 22:</small> Miscellaneous Utilities</h3>
+<ul>
+  <li>Page 627/628: In the final line of page 627, and in the table header at
+    the bottom of page 628, the format specifier 'F' should not be present. As
+    the 'f' format specifier produces a decimal format that only contains
+    digits, there is nothing to uppercase and so the 'F' format specifier does
+    not exist.</li>
+  <li>Page 643: In the middle paragraph the reference to <tt>java.nio.ReadableByteBuffer</tt>
+    should be <tt>java.nio.channels.ReadableByteChannel</tt>.</li>
+  <li>Page 647: Just prior to the code example, the text refers to <tt>StringTokenizer</tt>
+    when it should, of course, refer to <tt>StreamTokenizer</tt>.</li>
+  <li>Page 649: In the middle of the second paragraph, the text refers to <tt>StringTokenizer</tt>
+    when it should, of course, refer to <tt>StreamTokenizer</tt>.</li>
+  <li>Page 658. The paragraph after the table of math methods states:
+    <blockquote>
+      The remainder operator <tt>%</tt>, as described in &quot;Floating-Point
+      Arithmetic&quot; on page 202, obeys the rule
+      <pre><tt>    (x/y)*y + x%y == x</tt></pre>
+    </blockquote>
+    This is incorrect: the floating-point remainder operator behaves in an
+    analgous manner to the integer remainder operator, and it is that operator
+    which obeys the given rule. The rules itself makes no sense if <tt>x</tt>
+    and <tt>y</tt> are floating-point values. The text should simply read:
+    <blockquote>
+      The remainder operator <tt>%</tt>, as described in &quot;Floating-Point
+      Arithmetic&quot; on page 202, behaves in an analogous manner to the
+      remainder operator for integers.
+    </blockquote>
+  </li>
+</ul>
+<h3><small>C<small>HAPTER</small> 23:</small> System Programming</h3>
+<ul>
+</ul>
+<h3><small>C<small>HAPTER</small> 24:</small> Internationalization and
+Localization</h3>
+<ul>
+  <li>Page 689: The <tt>getKeys</tt> method returns an <tt>Enumeration&lt;String&gt;</tt>.</li>
+  <li>Page 690: At the end of the third paragraph, the reference to <tt>MissingBundleException</tt>
+    should be <tt>MissingResourceException</tt>.</li>
+  <li>Page 693: The <tt>getKeys</tt> method returns an <tt>Enumeration&lt;String&gt;</tt>.</li>
+  <li>On page 704, in the first example that creates a Japanese <code>Locale</code>
+    object, the first argument to the constructor should be <code>&quot;ja&quot;</code>
+    (the two character language code for Japanese) not <code>&quot;jp&quot;</code>.
+</ul>
+<h3><small>C<small>HAPTER</small> 25:</small> Standard Packages</h3>
+<ul>
+  <li>Page 726: The description of the <tt>URLEncoder</tt> class, after the code
+    example, is out of date and should be replaced by the following:
+    <blockquote>
+      The <tt>URLEncoder</tt> class lets you turn a string (such as a user-typed
+      query) into a form that can be included as part of a URL. ASCII letters
+      and digits remain unchanged, the space character is converted to a +, and
+      all other characters are encoded as one or more bytes, with each byte
+      represented by its value as two hex-digits preceded by a %. The
+      recommended encoding is UTF-8, but it can vary.
+    </blockquote>
+  </li>
+</ul>
+<h3><small>A<small>PPENDIX</small> A:</small> Application Evolution</h3>
+<ul>
+</ul>
+<h3><small>A<small>PPENDIX</small> B:</small> Useful Tables</h3>
+<ul>
+  <li>Page 751: In the table section for &quot;Character Classes&quot;, the last
+    three entries should use the <b>&amp;&amp;</b> operator, not the &amp;
+    operator.
+  <li>Page 752: In the table section for &quot;Posix Character Classes&quot; the
+    entry for \p{Print} shows the wrong range, it should &quot;printable
+    character; [\p{Graph}<b>\x20</b>]&quot;.</li>
+  <li>Page 752: In the table section for &quot;Classes for Unicode Blocks and
+    Characters&quot;, the last entry should use the <b>&amp;&amp;</b> operator,
+    not the &amp; operator.
+  <li>Page 752: In the table section for &quot;Greedy Quantifiers&quot;, the
+    fifth entry should read X<b>{</b>n,} - with a left-brace not a left
+    parentheses</li>
+  <li>Page 753: In the table section for &quot;Reluctant Quantifiers&quot;, the
+    fifth entry should read X<b>{</b>n,}? - with a left-brace not a left
+    parentheses.</li>
+  <li>Page 753: In the table section for &quot;Possessive Quantifiers&quot;, the
+    fifth entry should read X<b>{</b>n,}+ - with a left-brace not a left
+    parentheses.</li>
+  <li>Page 753: In the table section for &quot;Special Constructs&quot;, the
+    last three entries all have an extraneous semi-colon in the middle. The
+    three entries should read:
+    <blockquote>
+      (?&lt;=X) - X via zero-width positive lookbehind<br>
+      (?&lt;!X) - X via zero-width negative lookbehind<br>
+      (?&gt;X) - X as an independent, non-capturing group<br>
+    </blockquote>
+  </li>
+</ul>
+<h3>Further Reading</h3>
+<ul>
+</ul>
+
+</body>
+
+</html>

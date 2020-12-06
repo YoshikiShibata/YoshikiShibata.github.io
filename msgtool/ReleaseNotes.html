@@ -1,0 +1,1286 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.78 [ja]C-CCK-MCD BDPjm-Sony3  (Win98; U) [Netscape]">
+  <title>MessagingTool: Release Notes</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ee" vlink="#551a8b"
+ alink="#ff0000">
+<!--This file created 11:48  96/08/24 by Claris Home Page  version 1.0 Beta 1--><x-sas-window
+ top="25" bottom="457" left="4" right="534">
+</x-sas-window>
+<center><b>MessagingTool Release Notes</b></center>
+<hr size="4" width="100%">
+<br>
+<b>README FIRST:</b>
+<blockquote><font size="-1"><font color="#ff0000">The MessagingTool is<b>
+NOT COMPATIBLE</b> with JDK1.1, JDK1.2, and JDK1.3</font>. You must use
+Java 2 SDK1.4 or later versions..</font>
+  <p><font size="-1">To specify a directory where all files such as
+property,
+address caches, etc are stored, please use -Duser.home option like this:</font>
+  </p>
+  <ul>
+    <li>
+      <font size="-1">Windows</font></li>
+    <br>
+    <font size="-1">javaw <b>-Duser.home=XXXXXX</b> -jar msgtool.jar</font>
+    <li><font size="-1">Linux/Solaris</font></li>
+    <br>
+    <font size="-1">java&nbsp; -<b>Duser.home=XXXXXX</b> -jar
+msgtool.jar</font>
+  </ul>
+  <font size="-1">where XXXXXX is a full path name of the directory.</font></blockquote>
+<b>Release Notes for 2.51 </b><font size="-1">(2004.2.1)</font>
+<ul>
+  <li>
+    <b><font size="-1"><font color="#000099">[Swing]</font> </font></b><font
+ size="-1">The
+new menu "Back All Sticky Notes" is added. This menu is useful for
+Linux
+to make all sticky notes behind other windows.</font></li>
+</ul>
+<b>Release Notes for 2.50 </b><font size="-1">(2004.1.11)</font>
+<ul>
+  <li>
+    <b><font color="#ff0000"><font size="-1">After three and half
+years, I restarted
+working on MessagingTool. :-)</font></font></b></li>
+  <li>
+    <font size="-1"><b><font color="#000099">[Swing/AWT] </font></b><font
+ color="#000000">A
+file can be dragged and dropped into the file name field of the File
+Transfer
+dialog.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#000099">[Swing/AWT] </font></b><font
+ color="#000000">The
+default version is not AWT but Swing. If you want to use AWT, you have
+to specifiy </font><font color="#ff0000">-awt </font><font
+ color="#000000">option
+as the last argument.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b><font
+ color="#000000">:
+The IP address was not obtained correctly on Linux.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">[Swing] Bug Fix</font></b><font
+ color="#000000">:
+Since SDK 1.4, the Sticky Note had not worked correctly, because of
+changes
+of JWindow specification. Now Sticky Note was rewritten. To edit a
+Sticky
+Note, choose "Edit ..." menu from its context popup menu. The menu
+create
+a Sticky Note Editor. If you resize the editor frame, the source Sticky
+Note will also be resized automatically.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#000099">[Swing] </font></b><font
+ color="#000000">Now
+a dedicated window can be open independently from the main
+MessagingTool
+frame even on Linux.</font></font></li>
+</ul>
+<b>Release Notes for 2.43 </b><font size="-1">(2000.3.6)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">[Swing] BUG FIX</font></b>:
+Changing
+font in the properties window didn't change fonts in many areas such as
+input areas, log areas, popup menus, sticky notes. Especially I wrongly
+implemented code to change fonts in input/log areas. I noticed this
+wrong
+implementation when I was reading "<i><a
+ href="http://www.amazon.com/exec/obidos/ASIN/0130832928/yoshikisbookshel">Core
+Swing Advanced Programming</a></i>".</font></li>
+</ul>
+<b>Release Notes for 2.42 </b><font size="-1">(2000.2.28)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">[SWING] BUG FIX</font></b>:
+Copy
+operation in the swing version of any log window didn't work when Motif
+look &amp; feel was specified. It is because&nbsp; I didn't know that
+key
+bindings for Cut &amp; Paste operation for Motif was different from
+Metal
+/ Windows. I noticed this problem when I was reading "<i><a
+ href="http://www.amazon.com/exec/obidos/ASIN/0130832928/yoshikisbookshel">Core
+Swing Advanced Programming</a></i>" written by Kim Topley.</font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX?</font></b>:
+Running MessagingTool
+on Windows 95 has been sometimes freezing JVM(Java Virtual Machine). I
+couldn't find out what freezed JVM, but I put a workaround by guessing
+what was wrong.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[SWING] REIMPLEMENTATION</font></b>:
+As noted below in the 2.30 release, I thought I fixed the scrolling
+problem
+with Swing. However, it turned out that the fix was redundant and not a
+right one. Therefore I reimplemented the fix.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[SWING] IMPROVEMENT</font></b>:
+I reimplemented the code for handling focus in a stick note. Now
+loosing
+focus in a sticky note automatically saves the contents of all sticky
+notes.</font></li>
+</ul>
+<b>Release Notes for 2.41 </b><font size="-1">(2000.2.20)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[SWING] IMPROVEMENT</font></b>:
+The File dialog for choosing an image in a Sticky note now has a
+preview.</font></li>
+</ul>
+<b>Release Notes for 2.39</b><font size="-1"> (2000.1.1)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIXES</font></b>:
+fixed several
+minor bugs</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">IMPROVEMENT</font></b>:
+several
+minor improvements</font></li>
+</ul>
+<b>Release Notes for 2.34</b><font size="-1"> (1999.9.25)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>: "Fetch
+Log"
+option in the "Edit: Automatically Joining Meeting Rooms" didn't work.</font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>:
+"IllegalArgumentException"
+was thrown in some cases when the Online list was being updated.</font></li>
+</ul>
+<b>Release Notes for 2.32</b><font size="-1"> (1999.8.8)</font>
+<ul>
+  <li>
+    <font size="-1">The first official release for Java 2.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing]</font></b> <b><font
+ color="#ff0000">CAUTION</font></b>:
+    <font color="#ff0000">Contents
+of Sticky Notes created by 2.31 might be lost when you try 2.32. So,
+please
+make sure that any important contents must be saved into a text file or
+a Word document.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing]</font></b> <b><font
+ color="#ff0000">CAUTION</font></b>:
+To use Swing version, you must use <font color="#ff0000">JDK1.2.2</font>
+or <font color="#ff0000">Swing 1.1.1 with JDK1.1.8</font>. Because any
+bug patches for Swing included in 2.31 or previous versions are not
+included
+in this release.</font></li>
+</ul>
+<b>Release Notes for 2.31</b><font size="-1"> (1999.5.31)</font>
+<ul>
+  <li>
+    <b><font size="-1"><font color="#3333ff">[Swing]</font> <font
+ color="#ff0000">BUG
+FIX</font></font></b><font size="-1">: Fixed a StackOverflow problem
+with
+JDK1.1.8.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT</font></b>:
+A vertical scroll bar will appear if a sticky note is not big enought
+to
+show its contents. This was suggested by <b><i><font color="#3333ff">Kouchi
+Akiyama</font></i></b>.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT</font></b>:
+When a sticky note is created from a popup menu in another sticky note,
+the new sticky note will inherit the text background color of the other
+one. This was suggested by <b><i><font color="#3333ff">Kouchi Akiyama</font></i></b>.</font></li>
+</ul>
+<b>Release Notes for 2.30 </b><font size="-1">(1999.5.16)</font>
+<ul>
+  <li>
+    <font size="-1"><font color="#ff0000"><b>IMPORTANT KNOWN
+PROBLEM:&nbsp; </b>The
+Sticky Note feature doesn't work with Solaris 2.5/2.6 on a Sparc
+workstation.
+Unfortunately I haven't found why it doesn't work yet. </font><font
+ color="#000000">Thank
+you, </font><b><i><font color="#3333ff">Terry Wells</font></i></b><font
+ color="#000000">,
+for reporting this problem.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] USER INTEFACE
+CHANGE</font></b><font color="#000000">:
+All "Clear Log" buttons were deleted. You can delete the log with a
+"Clear
+All" menu in a Popup menu.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Java 2(JDK1.2)] NEW
+FEATURE</font></b><font color="#000000">:
+A name in the Online List can be dragged and dropped into a "To: "
+field
+or a "Additional To:" field.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE:&nbsp;</font></b><font
+ color="#000000">
+The Edit menu has a sub menu titled "Meeting Room ...". If you choose
+the
+submenu, the "Edit: Automatically Joining Meeting Room" dialog will
+appear.
+You can specify which open Meeting Room should be automatically joined
+when the MessagingTool is invoked. Rigt now you cannot specify a closed
+Meeting Room.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT:</font></b><font
+ color="#000000">
+To avoid losing the entire sticky notes when the MessagingTool is
+invoked
+with newer&nbsp; versions of Swing or JDK,&nbsp; all sticky notes are
+saved
+in two different formats. One format saves all styled text as well as
+images.
+Another format saves only text without any style information.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] </font><font
+ color="#ff0000">BUG
+FIX</font></b>: Insert Current Time didn't insert the current time
+correctly.</font></li>
+  <li>
+    <b><font size="-1"><font color="#3333ff">[Swing]</font> <font
+ color="#ff0000">BUG
+FIX</font></font></b><font size="-1">: Scrolling a log window didn't
+work
+correctly since I implemented a Swing version, but I finally found out
+and understood what was wrong. If you still have any problem regarding
+scrolling a log window, please let me kno.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">RE-IMPLEMENTATION:&nbsp; </font></b><font
+ color="#000000">I
+have been rewriting some code so that the code can be used commonly for
+both AWT and Swing versions as much as possible.&nbsp; For example,
+Edit
+dialogs for Address, Recipient Hint, and Recorded Message, were
+completely
+rewritten. I will continue&nbsp; rewritting. I will try to test the
+tool
+as much as possible, but&nbsp; if you find any defects, please let me
+know.</font></font></li>
+</ul>
+<b>Release Notes for 2.22 </b><font size="-1">(1999.4.17)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT</font></b>:
+"Insert" menu is added to the popup menu in a sticky note. The Insert
+menu
+has three sub-menus which are "Current Time (hh:mm:ss)", "Current Time
+(hh:mm)", and "Image ...".&nbsp; The "Image ...." menu is used to
+insert
+a GIF image or a JPEG image into a sticky note as one character.&nbsp;
+Thank you, <b><i><font color="#3333ff">Tomoo Ishizawa</font></i></b>,
+for
+suggesting the Current Time feature.</font></li>
+</ul>
+<b>Release Notes for 2.21 </b><font size="-1">(1999.4.10)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT</font></b>:
+Some menu items for sticky notes are added to the "File" menu and the
+popup
+menu in a sticky note.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT</font></b>:
+For receiving a file, the Swing version had always overwritten an
+existing&nbsp;
+file. A confirmation dialog is added to ask whether the file should be
+overwritten. Thank you, <b><i><font color="#3333ff">Seizo Umehara</font></i></b>,
+for suggesting this feature.</font></li>
+</ul>
+<b>Release Notes for 2.18</b><font size="-1"> (1999.3.25)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT</font></b>:
+"Other Colors" is added to the popup menu in a Sticky Note.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT: </font></b>Menus
+and popup menus are modified not to be shown outside the desktop.</font></li>
+</ul>
+<b>Release Notes for 2.16</b><font size="-1"> (1999.3.21)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[Swing] IMPROVEMENT</font></b>:
+The text background color is now immediately effective when you change
+the color with the Properties window. You don't have to quit the tool
+to
+see the effect.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">IMPROVEMENT</font></b>:
+When you
+join a meeting room, you can specify whether you want to retrieve the
+log
+for the room. Thank you, <b><i><font color="#3333ff">Terry Wells</font></i></b>,
+for suggesting this feature.</font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">[Swing Only] </font><font
+ color="#3333ff">NEW
+FEATURE</font></b>: As an accessory, you can create a "Sticky
+Note"&nbsp;
+just like Stickies on Macintosh. This feature is not planned to be
+provided
+for the AWT version. Sticky notes will be automatically saved when you
+quit the tool and saved notes will be automatically shown when you
+invoke
+the tool again later.</font></li>
+</ul>
+<b>Release Notes for 2.14 </b><font size="-1">(1999.2.20)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[SWING] IMPROVEMENT: </font></b><font
+ color="#000000">The
+file dialogs for file transfer are replaced with FileChooser of Swing.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[SWING] IMPROVEMENT:</font></b><font
+ color="#000000">
+The file transfer dialog for Swing&nbsp; is reimplemented so that the
+recipient
+hint list can be shown fully.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">[SWING] BUG FIX</font></b><font
+ color="#000000">:
+It turned out that the user search function was incorrectly implemented
+for Swing. Thank you,<b> </b></font><b><font color="#3333ff"><i>Tadashi
+Nakamur</i>a</font></b><font color="#000000">, for reporting the
+problem.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[JDK1.2] IMPROVEMENT:</font></b><font
+ color="#000000">
+Doubling clicking a room name in the Meeting Room list window, the room
+will be deiconified. This feature available only with JDK1.2. With
+Windows
+95/NT, it means that the room on the task bar will be opened. </font><font
+ color="#ff0000">To
+run with JDK1.2, please see release notes for 2.13 below.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">[JDK1.2] IMPROVEMENT:</font></b><font
+ color="#000000">
+The Online list window and the&nbsp; Meeting Room list window will be
+automatically
+deiconified when there is a waiting message. This feature available
+only
+with JDK1.2.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE:</font></b><font
+ color="#000000">
+Specifying only one asterisk (*) for user name in the User Search
+dialog
+will list all users who are using 2.14&nbsp; or later version of
+MessagingTool.</font></font></li>
+</ul>
+<b>Release Notes for 2.13 </b><font size="-1">(1999.2.8)</font>
+<ul>
+  <li>
+    <font size="-1"><font color="#ff0000">The name of jar file is
+changed back
+to the original <b>msgtool.jar</b></font>. To make my activities as a
+weekend
+programmer easier, I reorganized the source code. Now msgtool.jar
+contains
+both AWT and Swing versions. To run the&nbsp; Swing version , you have
+to specify <b><font color="#3333ff">-swing </font></b>option. If
+there
+is no swing available, the option will be ignored and the AWT version
+will
+be invoked.</font></li>
+  <li>
+    <font size="-1">Some of you may guess that the new msgtool.jar
+might contains
+code for JDK1.2(or Java 2). The new msgtool.jar contains both JDK1.1
+and
+JDK1.2 versions. With JDK1.2 version, you can use more fonts available
+on your system. To run the JDK1.2 versions, use java (or javaw) command
+instead of jre(or jrew) command because there is no jre command in
+JDK1.2.
+    <font color="#3333ff">Note
+that to run the Swing version properly, please see contents of </font><font
+ color="#ff0000">run12swing.bat</font><font color="#3333ff">
+file for Microsoft Windows environment. I haven't tested the Swing
+version
+with Solaris yet.</font></font></li>
+</ul>
+<b>Release Notes for 2.11 (AWT &amp; Swing versions for JDK) </b><font
+ size="-1">(1999.1.31)</font>
+<ul>
+  <li>
+    <b><font color="#3333ff"><font size="-1">NEW FEATURE:</font>&nbsp; </font><font
+ size="-1"><font color="#ff0000">File
+Transfer </font></font></b><font color="#000000"><font size="-1">feature
+is added. You can send a file directly to others via MessagingTool</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH 2.13] </font></b><font
+ color="#3333ff">Names
+of Jar files are changed to represent&nbsp; contents</font><font
+ color="#000000">:</font></font></li>
+  <ul>
+    <font size="-1"><font color="#ff0000">msgtool11awt.jar&nbsp;</font><font
+ color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+AWT version for JDK1.1</font></font>
+    <br>
+    <font size="-1"><font color="#ff0000">msgtool11swing.jar</font><font
+ color="#000000">&nbsp;&nbsp;&nbsp;
+Swing version for JDK1.1 + Swing 1.1</font></font>
+    <br>
+    <font size="-1"><font color="#ff0000">msgtool12awt.jar&nbsp;</font><font
+ color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+AWT version for JDK1.2</font></font>
+    <br>
+    <font size="-1"><font color="#ff0000">msgtool12swing.jar</font><font
+ color="#000000">&nbsp;&nbsp;&nbsp;
+Swing version for JDK1.2</font></font>
+  </ul>
+  <font color="#000000"><font size="-1">Please note JDK1.2 versions are
+not
+available yet.</font></font>
+</ul>
+<b>Release Notes for 2.00 and "2.00 beta 7 for JFC" </b><font size="-1">(1998.9.5)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>: <font
+ color="#ff0000">Message
+Sender(1.00)</font>, a command line tool to send a message, is now
+implemented
+and included in the msgtool.jar file.</font></li>
+</ul>
+<b>Release Notes for 1.96 and "1.96 beta 7 for JFC" </b><font size="-1">(1998.8.30)</font>
+<ul>
+  <li>
+    <font size="-1">The header attached to a broadcast message was
+changed from
+"[broadcast message]" to "[Broadcast Message]".</font></li>
+  <li>
+    <font size="-1">The properties dialog of&nbsp; the JFC version was
+rewritten.</font></li>
+</ul>
+<b>Release Notes for 1.95 and "1.95 beta 6 for JFC" </b><font size="-1">(1998.8.3)</font>
+<ul>
+  <li>
+    <font size="-1">All source code for both versions were reorganized
+into several
+packages so that maintaining both versions would be much easier.</font></li>
+  <li>
+    <font size="-1">The usage of heap memory was tuned to use less
+memory.</font></li>
+</ul>
+<b>Release Notes for 1.94 and "1.94 beta 6 for JFC" </b><font size="-1">(1998.7.5)</font>
+<ul>
+  <li>
+    <b><font color="#ff0000"><font size="-1">No registration is needed.</font></font></b></li>
+</ul>
+<b>Release Notes for "1.93 beta 5 for JFC" </b><font size="-1">(1998.6.14)</font>
+<ul>
+  <li>
+    <font size="-1">The workaround in 1.93 had a side effect only for
+JFC version.</font></li>
+</ul>
+<b>Release Notes for 1.93 and "1.93 beta 4 for JFC"</b><font size="-1">
+(1998.5.31)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">Workaround for JDK/JRE
+1.1.6</font></b>:&nbsp;
+Tadashi Namamura from Justsystem Corporation reported a problem that
+MessagingTool
+hang up when a dialog was shown. It turned out that showing a "modal"
+dialog
+in some cases caused the problem. This problem happened with Windows 95
+/NT and JDK/JRE 1.1.6.&nbsp; With 1.93, I put a workaround to avoid the
+hang-up.</font></li>
+</ul>
+<b>Release Notes for "1.92 beta 4 for JFC" </b><font size="-1">(1998.5.9)</font>
+<ul>
+  <li>
+    <font size="-1"><font color="#cc0000">The beta 4 is for Swing 1.0.2
+and JDK/JRE
+1.1.6</font>. All beta users must install both Swing 1.0.2 and JRE(or
+JDK)
+1.1.6 to use the beta 4. Three bugs regarding Swing I reported to
+JavaSoft
+were fixed wth Swing 1.0.2. Therefore the beta 4 doesn't contains my
+own
+fix code which was included in the beta 3.</font></li>
+</ul>
+<b>Release Notes for 1.92 and "1.92 beta 3 for JFC" </b><font size="-1">(1998.5.2)</font>
+<ul>
+  <li>
+    <font size="-1">java/util/Properties.class included in msgtool.jar
+is updated
+to JDK1.1.6. Unfortunately, JDK1.1.6 doesn't fix the bug(see Release
+Notes
+for 1.03 below) yet. Therefore I copy the 1.1.6 version of
+Properties.java,
+modify it, and put the modified Properties.class into msgtool.jar again.</font></li>
+  <li>
+    <font size="-1">With JDK/JRE 1.1.6, an Input Method such as
+Microsoft IME
+can be invoked from a non-peer based AWT component. Therefore all AWT
+components
+of&nbsp; the JFC version of MessagingTool are replaced with Swing(JFC)
+components. Note that CTRL-N(see "Release Notes for 1.90 beta 1 for
+JFC"
+below) is still supported.</font></li>
+</ul>
+<b>Release Notes for 1.91 and "1.91 beta 2 for JFC" </b><font size="-1">(1998.4.11)</font>
+<ul>
+  <li>
+    <font size="-1">The internet domain for this web site and the
+author's email
+was changed from <b>so-net.or.jp</b> to <b>so-net.ne.jp</b>.
+Therefore
+all references to the old domain were changed.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">IMPROVEMENT</font></b>:
+The JFC
+version is using Swing(which is a collection of improved UI
+components).
+Unfortunately it turned out that Swing components are not designed to
+be
+thread safe: It requires special way coding in a multi-thread program
+such
+as MessagingTool. Therefore I written some code for Swing components.</font></li>
+</ul>
+<b>Release Notes for 1.90 </b><font size="-1">(1998.3.21)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>:
+Background
+color for text can be specified.<font color="#ff0000"> To&nbsp; make a
+color effective, you have to terminate the tool and run it again.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">IMPROVEMENT</font></b>:
+The OnLine
+list is re-implemented so that updating the list is much faster than
+before.</font></li>
+</ul>
+<b>Release Notes for 1.90 beta 1&nbsp; for JFC </b><font size="-1">(1998.3.21)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURES</font></b>:
+With same
+features of non-JFC version, this JFC version has the following
+additional
+features:</font></li>
+  <ul>
+    <li>
+      <font size="-1">All received messages are shown in <b><font
+ color="#3333ff">blue</font></b>
+instead of black.</font></li>
+    <li>
+      <font size="-1">In The OnLine list and Meeting Room list, names
+marked with<b><font color="#000000">
+!</font></b> and<b> x</b> are shown in <b><font color="#ff0000">red</font></b>
+and<b> <font color="#3333ff">blue</font></b> respectively.</font></li>
+    <li>
+      <font size="-1">A divider between an input area and a log area
+can be draggable.</font></li>
+    <li>
+      <font size="-1">A <b>Look &amp; Feel</b> can be specified.</font></li>
+  </ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">KNOWN PROBLEMS</font></b>:</font></li>
+  <ul>
+    <li>
+      <font size="-1">This JFC version is much slower than the non-JFC
+version.</font></li>
+    <li>
+      <font size="-1">When a message is received, scrolling a log area
+doesn't
+work correctly.</font></li>
+    <li>
+      <font size="-1">A popup menu on a dialog might be cut off due to
+a limitation
+of JFC: It is supposed to be fixed with JDK1.2.</font></li>
+    <li>
+      <font size="-1"><b><font color="#000000">[PROBABLY OBSOLETE WITH
+1.91 beta
+2]</font></b><font color="#ff0000"> Sometimes the tool hangs.</font></font></li>
+    <li>
+      <font size="-1">Font in an input area is not the font spcified in
+the Properties
+dialog.</font></li>
+  </ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NOTES</font></b>:&nbsp;
+The current
+JFC doesn't support an&nbsp; Input Method such as Microsoft's IME98 or
+Jusystem's ATOK11. As a workaround, you can invoke a Native Input
+Window
+over a input area by CTRL-N. CTRL-N is a toggle key. If you type in
+CTRL-N
+over the Native Input Window, the window will disappear. When a Native
+Input Window is invoked, you can deliver a message in the window by
+pressing
+the function key which is specified in the Properties dialog. Note that
+in that case, clicking "Deliver" button doesn't work.</font></li>
+</ul>
+<b>Release Notes for 1.87 </b><font size="-1">(1998.2.15)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">IMPROVEMENT</font></b>:&nbsp;
+When
+a&nbsp; log sub-window&nbsp; for Meeting Room and Messaging Dialog
+windows
+is overlowed(see 1.83 notes below), a warning window will appear and
+let
+you know that the log sub-window will be cleared.</font></li>
+</ul>
+<b>Release Notes for 1.86 </b><font size="-1">(1998.2.4)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>: Fixed
+a bug
+that if&nbsp; a message is sent or received after clicking "Clear Log"
+button on the main MessagingTool window,&nbsp; a warning window added
+with
+V1.83 appears.</font></li>
+</ul>
+<b>Release Notes for 1.85 </b><font size="-1">(1998.1.19)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">IMPROVEMENT</font></b>: If
+the content
+of the latest log file is empty when MessagingTool is invoked, the log
+file will be re-used for logging messages.</font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>: V1.84
+file was
+corrupted.</font></li>
+</ul>
+<b>Release Notes for 1.84 </b><font size="-1">(1998.1.10)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>: If the
+"Activate
+On Reception" in the Properties is checked, either the Reception Dialog
+window or a Messaging Dialog window will be opened on top of other
+windows
+when a message is received. In addition, if the main MessagingTool
+window
+is opened(deiconified) when a message is received, the window will be
+shown
+on top of&nbsp; other windows. This fix&nbsp; is tested only with
+Windows
+95.</font></li>
+</ul>
+<b>Release Notes for 1.83 </b><font size="-1">(1998.1.8)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">IMPROVEMENT</font></b>:
+When the
+Log window is overflowed(due to the limitation of JDK1.1), a warning
+window
+will appear and let you know that the log window will be cleared.</font></li>
+</ul>
+<b>Release Notes for 1.82 </b><font size="-1">(1997.12.11)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>: Fixed
+a bug
+that NullPointerException is raised when there is no Address Cache file.</font></li>
+</ul>
+<b>Release Notes for 1.81 </b><font size="-1">(1997.12.7)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>:
+You can
+specify whether a name in the Address Cache file is listed in the
+Recipient
+Hint Popup menu. Try&nbsp; to open and see the new dialog for the
+Address
+Cache.</font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">WORKAROUND</font></b>:
+JDK/JRE 1.1.5
+seems to have introduced a bug that a mouse event doesn't report a
+correct
+click count for double-click operation. It reports 3 instead of 2 as
+click
+count. So I changed code to check if the click count is greater than or
+equal to 2.</font></li>
+</ul>
+<b>Release Notes for 1.77 </b><font size="-1">(1997.11.19)</font>
+<ul>
+  <li>
+    <b><font size="-1"><font color="#ff0000">BUG FIX</font>: </font></b><font
+ size="-1">When
+a private room is created, its name is now correctly composed.</font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">NOTE</font></b>: The
+default directory
+of the self-extracted file is changed to C:\Program Files\MessagingTool.</font></li>
+</ul>
+<b>Release Notes for 1.76 </b><font size="-1">(1997.11.15)</font>
+<ul>
+  <li>
+    <b><font size="-1"><font color="#3333ff">IMPROVEMENT</font>: </font></b><font
+ size="-1">Locations
+and sizes of most kinds of windows are preserved.</font></li>
+  <li>
+    <b><font size="-1"><font color="#3333ff">IMPROVEMENT:</font> </font></b><font
+ size="-1">When
+a meeting room is newly joined, the log of the room will be searched
+from
+other MessagingTools and will be shown.</font></li>
+</ul>
+<b>Release Notes for 1.73</b><font size="-1"> (1997.11.1)</font>
+<ul>
+  <li>
+    <font size="-1">The User's Guide was revised.</font></li>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>: A
+warning
+dialog which shows "Too Long Message! Please shorten it." when a long
+message
+cannot be sent to a meeting room.</font></li>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:
+Unchecking
+Not In Office checkbox will automatically join meeting rooms which had
+been joined before.</font></li>
+</ul>
+<b>Release Notes for 1.70 </b><font size="-1">(1997.10.21)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>: When a
+message
+is received, its corresponding Messaging Window will scroll up
+correctly.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">SPEC CHANGE</font></b>:
+When multiple
+names are selected in the OnLine window and "Open Messaging Window" is
+selected, only one Messaging Window will be opened with additional
+reccipients
+names.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>:
+added a
+vritual meeting room feature.</font></li>
+</ul>
+<b>Release Notes for 1.62 </b><font size="-1">(1997.9.20)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:
+After sending
+a message, the input focus will be correctly returned.</font></li>
+  <li>
+    <font color="#ff0000"><font size="-1">The procedure&nbsp; to get a
+registered
+number is changed.</font></font></li>
+</ul>
+<b>Release Notes for 1.60 </b><font size="-1">(1997.9.13)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>: A
+message
+can be broadcasted. See the updated User's Guide in details.</font></li>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>: An
+entry
+in the Address Cache&nbsp; has a sort key for Japanese people.</font></li>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:
+OnLine winow
+shows "Not In Office" status as well as reception of messages.</font></li>
+</ul>
+<b>Release Notes for 1.50 </b><font size="-1">(1997.8.27)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>:
+"OnLine
+List ..." menu is added to the Window menu. The menu invokes the OnLine
+dialog which shows recipients who are running MessagingTool. About
+every
+5 minutes all recipients in the Address Cache file will be checked.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>:
+"Log Messages"
+checkbox is added to the Properties dialog. If it is checked, all
+messages
+will be logged into a file. To view the file, select a item from
+"Logged
+Messages" in the "File" menu.</font></li>
+</ul>
+<b>Release Notes for 1.40 </b><font size="-1">(1997.8.2) <b><u><font
+ color="#ff0000">One
+year anniversary release!!</font></u></b></font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:<b>
+    </b>Locations
+of the main window and the received message dialog are always
+preserved:
+their last locations will be saved automatically and used when they are
+invoked.</font></li>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:
+All dialog
+windows invoked from "Edit"&nbsp; and "About" menus will be shown on
+top
+of the main window.</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>:
+"members"
+field is added to the edit window of Recipient Hints. If a popup hint
+has
+a specified members string, the specified string will be copied into
+"To:"
+field when the popup hint is selected.</font></li>
+  <li>
+    <font size="-1"><b><font color="#ff0000">BUG FIX</font></b>: The
+font of
+the menu list of Dedicated Messaging Dialog is now correctly set to the
+value specified in the Properties.</font></li>
+</ul>
+<b>Release Notes for 1.34 </b><font size="-1">(1997.7.7)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:
+All messages
+sent from the Main window or a Sending window are correctly logged into
+a corresponding Dedicated Messaging Dialog..</font></li>
+  <li>
+    <font size="-1"><b><font color="#3333ff">NEW FEATURE</font></b>:
+With the
+window's destroy operation, a confirm dialog appears. The confirm
+dialog
+will automatically disappear after 5 seconds pass. When the dialog
+appears
+for the second time, it doesn't allow "cancel" , because of a problem
+which
+has not been solved yet.</font></li>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:
+All entries
+in the Address Cache will be automatically added to the popup menu of
+the
+Recipients hint.</font></li>
+  <li>
+    <font size="-1"><b><font color="#00cc00">IMPROVEMENT</font></b>:
+The title
+of the main window will show the status of the tool when it is
+iconified.</font></li>
+</ul>
+<b>Release Notes for 1.30</b> <font size="-1">(1997.4.18)</font>
+<ul>
+  <li>
+    <font size="-1">Time Zone is deleted from Properties because
+showing time
+stamp is correctly re-implemented.</font></li>
+  <li>
+    <font size="-1">MessagingTool User's Guide is added to this web
+page.</font></li>
+</ul>
+<b>Release Notes for 1.20</b> <font size="-1">(1997.3.31)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: "Beep
+On Reception"
+is correctly re-implemented.</font></li>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: The
+Properties
+window is now not resizable.</font></li>
+  <li>
+    <font size="-1"><b><font color="#0000ff">NEW FEATURE</font></b>:
+Each edit
+window has now "Update" button. Update button will replace a selected
+item
+with a new value.</font></li>
+  <li>
+    <font size="-1"><b><font color="#0000ff">NEW FEATURE</font></b>:
+"Messaging
+Dialog" is added to "Window" menu.</font></li>
+</ul>
+<b>Release Notes for 1.11 </b><font size="-1">(1997.3.29)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>:
+Checking "Not
+In Office" works on Solaris</font></li>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: If one
+of multiple
+recipients receives a message, the message is shown in the Log window.</font></li>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: A
+Messaging
+Dialog window will not be automatically dismissed when the main window
+is iconified.</font></li>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: When a
+message
+is received, its sender's address will be automatically registered into
+the Address Cache file. However, if there is any existing entry whose
+IP
+address is identical to the sender's address, the Address Cache file
+will
+not be updated. In other words, once you change a name in the Address
+Edit
+window, the changed name will be preserved.</font></li>
+  <li>
+    <font size="-1"><b>NOTE</b>: <font color="#000000"><b>JDK 1.1.1</b>
+is released.
+However, the bug of java.util.Properties(see 1.03 release notes below)
+is not fixed yet.</font></font></li>
+</ul>
+<b>Release Notes for 1.10</b> <font size="-1">(1997.3.23)</font>
+<ul>
+  <li>
+    <font size="-1"><font color="#0000ff"><b>NEW FEATURE</b>:</font>
+Multiple
+lines can be written as Recorded Message.</font></li>
+  <li>
+    <font size="-1"><b><font color="#0000ff">NEW FEATURE</font></b>:
+The choices
+for "Activate On Reception" are now "Messaging Dialog" and "Reception
+Dialog".
+"Messaging Dialog" is a special dialog window which will be invoked
+when
+a message is received. The Messaging Dialog is used to send messages to
+the sender of the received message. You can also specify additional
+recipients
+with the window. The Messaging Dialog window has its own log window
+where
+only messages sent to the sender or received from the sender will be
+shown.
+Note that all messages sent or received will be also shown in the log
+window
+of the main MessagingTool window.</font></li>
+</ul>
+<b>Release Notes for 1.04 </b><font size="-1">(1997.3.15)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: Popup
+hints
+are positioned correctly.</font></li>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: The
+font of
+Popup hints are correctly set after editing hints.</font></li>
+  <li>
+    <font size="-1"><b><font color="#0000ff">NEW FEATURE</font></b>:
+With 1.04,
+if a probe message(zero length message) is received when the Not In
+Office
+is checked, the recorded message will be sent back.</font></li>
+</ul>
+<b>Release Notes for 1.03 </b><font size="-1">(1997.3.9)</font>
+<ul>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b><font
+ color="#000000">:
+Hints of recipients and recorded messages are listed by alphabetical
+order
+in edit windows and popup hints.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#dd0000">BUG FIX</font></b>: <font
+ color="#0000ff">The
+release file contains java/util/Properties.class which fixes a bug in
+JDK
+1.1: Japanese hints of recipients and recorded messages are correctly
+parsed
+when the tool is invoked</font>. <font color="#dd0000">Please make
+sure
+CLASSPATH in your environment includes .(period) first.</font></font></li>
+  <li>
+    <font size="-1"><b>NOTE</b>: I tried to implement ICON images for
+three states:
+Normal, Not In Office, Message Received. But the Windows 95 version of
+JDK 1.1 doesn't work for changing icons frequently.. So I commented the
+code out.</font></li>
+</ul>
+<b>Release Notes for 1.02 </b><font size="-1">(1997.3.1)</font>
+<ul>
+  <li>
+    <font size="-1">Made the Reception Dialog small.</font></li>
+  <li>
+    <font size="-1">IP address is shown in the Properties window</font></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH JDK 1.1.1]</font></b>
+The garbage character problem in the Log window was workarounded.</font></li>
+  <li>
+    <font size="-1">Japanese messages for "No Hint Available" and "New
+message
+arrived" were added.</font></li>
+  <li>
+    <font size="-1">Font specified in the Properties window is used as
+font of
+the menu such as File.</font></li>
+</ul>
+<b>Release Notes for 1.01 </b><font size="-1">(1997.2.20)</font>
+<ul>
+  <li>
+    <b><font color="#0000ff"><font size="-1">Modified for the final
+version of
+JDK 1.1 release.</font></font></b></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH 1.10] KNOWN
+PROBLEM</font></b>:
+"Activate On Reception" for MessagingTool Window doesn't work.</font></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH JDK 1.1.1]
+KNOWN
+PROBLEM</font></b>: When a message is shown in the Log window, a
+garbage
+character is shown in the Log window with JDK for Windows 95/NT</font></li>
+</ul>
+<b>Release Notes for 1.00 </b><font size="-1">(1997.2.16)</font>
+<ul>
+  <li>
+    <b><font size="-1"><font color="#ff061a">BUG FIX</font>:</font></b><font
+ size="-1">
+The popup menu is shown correctly with JDK Beta 3 for Solaris.</font></li>
+  <li>
+    <font size="-1"><b><font color="#0000ff">NEW FEATURE</font></b>:
+Finally
+"<b>Another ...</b>" menu is implemented.</font></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH 1.12] NEW
+FEATURE</font></b>:
+"<b>Beep On Reception</b>" is added in the properties window. If it is
+checked, beep character(0x07) will be send to the standard out. <font
+ color="#000000">Therefore
+if you run the tool with <b>javaw</b> command under Windows 95/NT, you
+cannot hear the beep sound.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH 1.01] KNOWN
+PROBLEM</font></b>:
+"Print ..." menu doesn't work with JDK Beta 3. <font color="#000000">DON'T
+TRY IT.</font></font></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH 1.02] KNOWN
+PROBLEM</font></b>:
+When a message is shown in the Log window, garbage characters are shown
+in the Log window with JDK Beta 3 for Windows 95/NT.</font></li>
+  <li>
+    <font size="-1"><b><font color="#000000">[OBSOLETE WITH 1.01] KNOWN
+PROBLEM</font></b>:
+Popup menu doesn't work with JDK Beta 3 for Windows 95 /NT.</font></li>
+</ul>
+<b>Release Notes for 0.90</b> <font size="-1">(1997.2.11)</font>
+<ul>
+  <li>
+    <font size="-1"><font color="#0000ff">Rewritten for
+internationalization.
+All labels now can be localized to a specific language. V0.90 provides
+localized messages only for <b>Japanese</b>: locale is <b>ja</b>. If
+you
+run V0.90 under Japanese version of Windows 95, all labels will be
+shown
+in Japanese. Under Solaris, if the <b>LANG</b> variable is <b>ja</b>,
+all
+labels are supposed to be shown in Japanese, but I haven't tested it
+yet.
+If you want to localize in other languages, please let me know</font>.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with JDK 1.1 Final]</b> Hints for
+Recipient
+and Recorded Message can be popped up over "To:" and "Recorded
+Message:"
+labels. <b>But it doesn't show up a correct popup menu with JDK Beta 3
+for Windows 95.</b></font></li>
+</ul>
+<b>Release Notes for 0.80</b> <font size="-1">(1997.2.9)</font>
+<ul>
+  <li>
+    <b><font color="#0000ff"><font size="-1">Rewritten for the new
+event model
+of JDK 1.1.</font></font></b></li>
+  <li>
+    <font size="-1"><b>[OBSOLET with 1.30] TimeZone </b>option is
+added in the
+Properties window.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with 0.90] Set</b> button in the edit
+windows
+for recipients and recorded message causes a <b>crash</b> of VM with
+Windows
+95. Right now I don't know why.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with JDK 1.1.1]</b> There are some
+garbage characters
+in the Log window. I think it is a bug of JDK 1.1beta3. It might be
+fixed
+with the FCS version of JDK 1.1.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with JDK 1.1.1]</b> With JDK 1.1beta3,
+handling
+Japanese characters doesn't work yet. It might be fixed with the FCS
+version
+of JDK 1.1.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with JDK 1.1 Final]</b> I tried to use
+Popup
+menu for hints, but it doesn't work. I will try it with the FCS version
+of JDK 1.1.</font></li>
+  <li>
+    <font size="-1">The release file is now in <b>jar</b>(Java Archive
+Tool)
+format.</font></li>
+</ul>
+<b>Release Notes for 0.70<font size="-1">&nbsp; </font></b><font
+ size="-1">(1996.11.2)</font>
+<ul>
+  <li>
+    <font size="-1"><b>File </b>menu is added to the menu bar: There
+is only
+    <b>Quit
+    </b>in
+it.</font></li>
+  <li>
+    <font size="-1"><b>Window </b>menu is added to the menu bar: there
+are <b>Another
+...</b> and <b>Clear Log</b> in it.</font></li>
+  <li>
+    <font size="-1"><b>Another ..</b>. button is deleted. It is moved
+into <b>Window
+    </b>menu.</font></li>
+  <li>
+    <font size="-1"><b>Clear Log</b> from <b>Window </b>menu clears
+the text
+in the Log window.</font></li>
+  <li>
+    <font size="-1">Changing font name, font style, or font size in the
+    <b>Properties
+    </b>window
+repaints the main window immediately after the <b>Properties
+    </b>window
+is closed by clicking <b>Set </b>button.</font></li>
+</ul>
+<b>Release Notes for 0.60 </b><font size="-1">(1996.10.26)</font>
+<ul>
+  <li>
+    <font size="-1">Now the zip file for Windows 95/NT contains the
+correct directory
+structure. When you unzip the file, make sure that the folder
+(directory)
+is preserved: e.g. If you are using WinZip, make sure check "Use Folder
+Names" in its Extract window.</font></li>
+  <li>
+    <font size="-1">"Quit" button is deleted.</font></li>
+  <li>
+    <font size="-1">"Properties ..." button is moved into the Edit menu.</font></li>
+  <li>
+    <font size="-1">"Help" menu is added to the menu bar, and the About
+menu
+is moved into the "Help" menu. The "Help" menu has two disabled menus
+which
+I intend to implement later.</font></li>
+  <li>
+    <font size="-1">The main window can be correctly resized.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with JDK 1.1]</b> Most dialog windows
+except
+"Reception Dialog" are packed much better. Note that JDK1.0.2 for
+Windows
+95/NT has a bug that a dialog window is not packed correctly.</font></li>
+  <li>
+    <font color="#dd0000"><font size="-1">I decided not to release
+Macintosh
+version, because JDK1.0.2 for Macintosh is not stable. If you need a
+Macintosh
+version, please let me know.</font></font></li>
+</ul>
+<b>Release Notes for 0.50 </b><font size="-1">(1996.10.8)</font>
+<ul>
+  <li>
+    <font size="-1"><b>[OBSOLETE with V0.70] </b>"Font Name", "Font
+Style", and
+"Font Size" are supported in the Properties window. However, to make
+any
+changes effective, you have to quit and re-run MessagingTool.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with V0.60] </b>The zip
+file(msgtool.zip) for
+Windows 95/NT doesn't have the correct directory structure. All files
+except
+MessagingTool.java must be moved into a directory called msgtool:</font></li>
+  <ul>
+    <li>
+      <font size="-1">mkdir msgtool</font></li>
+    <li>
+      <font size="-1">move *.class msgtool</font></li>
+    <li>
+      <font size="-1">cd msgtool</font></li>
+    <li>
+      <font size="-1">move MessagingTool.class ..</font></li>
+  </ul>
+</ul>
+<b>Release Notes for 0.40 </b><font size="-1">(1996.8.4)</font>
+<ul>
+  <li>
+    <b>[<font size="-1">OBSOLETE with V0.60] </font></b><font size="-1">To
+quit
+MessagingTool, use "Quit" button.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with V1.00] </b>"Another ..." button
+is not
+implemented yet.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with V1.01]</b> "On Windows 95, the
+following
+windows
+are not shown correctly: please enlarge them to show their contents
+correctly:
+"Properties ...", Edit "Address Cache ...", Edit "Recipient Hints",
+Edit
+"Recorded Message Hints", About "MessagingTool", About "System
+Properties".</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with V1.10]</b> "Activate On
+Reception" doesn't
+work on Macintosh.</font></li>
+  <li>
+    <font size="-1">On Macintosh, there is no way to close the
+MessagingTool
+window.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with V1.10] </b>"Activate On
+Reception" has
+a choice: "Reception Dialog" or "MessagingTool window". For Windows 95,
+please choose "Reception Dialog" so that the reception dialog window
+will
+be popped up when a message is received even if MessagingTool window is
+closed on the task bar.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with V1.10]</b> The choice of
+"Activate On Reception"
+doesn't show up on Solaris. Try to enlarge the Properties window to
+show
+it up.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with JDK 1.1]</b> Java API doesn't
+provide any
+way to specify a raw IP address in its socket interface. The behavior
+of
+passing a "xxx.xxx.xxx.xxx" style address string(raw IP address string
+such as 129.249.53.58) to the socket interface seems dependent on the
+implementation
+of JDK. If you have any problem with that style addressing, then try a
+host name instead. As far as I know, with Windows 95, you need to
+specify
+host name instead of IP address. I hope this problem will be fixed with
+JDK 1.1.</font></li>
+  <li>
+    <font size="-1"><b>[OBSOLETE with JDK 1.1] </b>Japanese is not
+supported
+yet, because JDK 1.0.2 doesn't support Japanese yet.</font></li>
+</ul>
+<hr size="4" width="100%"><font size="-2">Copyright (c) 1996 -
+2000,&nbsp;
+2003 - 2004 by Yoshiki Shibata</font>
+<br>
+<font size="-2">All rights reserved.</font>
+</body>
+</html>
