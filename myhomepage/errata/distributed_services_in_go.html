@@ -11,19 +11,70 @@
 <center>
 <h2>
 <font color="#006600">『Go言語による分散サービス』正誤表</font></h2>
-<p>2022年9月9日改訂</center>
+<p>2022年9月11日改訂</center>
 <H4>はじめに</H4>
 『Go言語による分散サービス』は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。<br><br>
 
 <a NAME="01Printing"></a><B>第1刷 (2022年8月1日発行)</B><br>
 <UL>
 <li>14頁：<code>example.pb.go</code>中の最後の2行のコメントが英語のままになっていますが「<FONT color="#0000FF">注：protobufは内部のフィールドとメソッドを生成しますが簡潔にするために省略しています。</FONT>」に修正（訳出漏れ）（2022.8.4）</li>
+<li>34頁：<code>Close()</code>メソッドで、次のように<code>Sync</code>の後に<code>UnsafeUnmap</code>の呼び出しを追加する（2022.9.11）</li>
+<pre>
+	if err := i.mmap.Sync(gommap.MS_SYNC); err != nil {
+ 		return err
+ 	}
+ 	if err := i.mmap.UnsafeUnmap(); err != nil {
+ 		return err
+ 	}
+</pre>
+<li>43頁：先頭にある<code>os.MkdirTemp</code>の部分を、次のように<code>err</code>を検査するように修正する（2022.9.11）</li>
+<pre>
+	dir, err := os.MkdirTemp("", "segment-test")
+ 	require.NoError(t, err)
+ 	defer os.RemoveAll(dir)
+</pre>
 <li>46頁：訳注の「<FONT color="#FF0000">39</FONT>ページにあります」を「<FONT color="#0000FF">50</FONT>ページにあります」（2022.9.9）</li>
+<li>47頁：<code>Read</code>メソッドの最後の処理を次のように修正する（2022.9.11）</li>
+<pre>
+	if s == nil {
+ 		return nil, fmt.Errorf("offset out of range: %d", off)
+ 	}
+ 	return s.Read(off)
+</pre>
+<li>68頁：<code>error.go</code>の<code>import</code>文の内容を、次のように変更する（2022.9.11）</li>
+<pre>
+import (
+	"fmt"
+
+	"google.golang.org/genproto/googleapis/rpc/errdetails"
+	codes "google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
+)
+</pre>
+<li>68頁：<code>error.go</code>の<code>GRPCStatus</code>メソッドの内の<FONT color="#FF0000"><code>404</code></FONT>が指定されている部分を、次のように<FONT color="#0000FF"><code>codes.OutOfRange</code></FONT>に変更する（2022.9.11）</li>
+<pre>
+	st := status.New(
+ 		codes.OutOfRange,
+ 		fmt.Sprintf("offset out of range: %d", e.Offset),
+ 	)
+</pre>
+<li>69頁：一つ目の<code>log.go</code>を、次のように変更する（2022.9.11）</li>
+<pre>
+	if s == nil {
+ 		return nil, fmt.Errorf("offset out of range: %d", off)
+ 	}
+</pre>
+<li>69頁：二つ目の<code>log.go</code>を、次のように変更する（2022.9.11）</li>
+<pre>
+	if s == nil {
+ 		return nil, api.ErrOffsetOutOfRange{Offset: off}
+ 	}
+</pre>
 <li>89頁：1行目の「<code><FONT color="#FF0000">setup</FONT>_test.go</code>」を「<code><FONT color="#0000FF">server</FONT>_test.go</code>」に修正（2022.8.31）
 </UL>
 
 <H4>謝辞</H4>
 誤りの指摘を頂きました次の方々に感謝いたします。<br>
-　玉木 竜二、宮原 孝行
+　玉木 竜二、宮原 孝行、<a href="https://technical-book-reading-2.connpass.com/event/257553/">第2回『Go言語による分散サービス』オンライン読書</a>の参加者
 </body>
 </html>
