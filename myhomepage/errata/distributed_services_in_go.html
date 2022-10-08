@@ -11,7 +11,7 @@
 <center>
 <h2>
 <font color="#006600">『Go言語による分散サービス』正誤表</font></h2>
-<p>2022年9月11日改訂</center>
+<p>2022年10月9日改訂</center>
 <H4>はじめに</H4>
 『Go言語による分散サービス』は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。<br><br>
 
@@ -70,7 +70,10 @@ import (
  		return nil, api.ErrOffsetOutOfRange{Offset: off}
  	}
 </pre>
-<li>89頁：1行目の「<code><FONT color="#FF0000">setup</FONT>_test.go</code>」を「<code><FONT color="#0000FF">server</FONT>_test.go</code>」に修正（2022.8.31）
+<li>89頁：1行目の「<code><FONT color="#FF0000">setup</FONT>_test.go</code>」を「<code><FONT color="#0000FF">server</FONT>_test.go</code>」に修正（2022.8.31）</li>
+		<li>93頁：コード中の「<code>Server: true,</code>」の<code>true</code>の位置を上の行に合わせる（2022.10.9）</li>
+		<li>96頁：<code>server_test.go</code>中の「<code><FONT color="#FF0000">crt</FONT>Path</code>」を「<code><FONT color="#0000FF">cert</Font>Path</code>」に修正（2か所）（2022.10.9）</li>
+		<li>97頁：4行目の「<code>newClient(<FONT color="#FF0000">crt</FONT>Path,</code>」を「<code>newClient(<FONT color="#0000FF">cert</Font>Path,</code>」に修正（2022.10.9）</li>
 </UL>
 
 <H4>謝辞</H4>
