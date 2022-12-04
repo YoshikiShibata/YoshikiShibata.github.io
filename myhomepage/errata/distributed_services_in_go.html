@@ -11,7 +11,7 @@
 <center>
 <h2>
 <font color="#006600">『Go言語による分散サービス』正誤表</font></h2>
-<p>2022年12月3日改訂</center>
+<p>2022年12月4日改訂</center>
 <H4>はじめに</H4>
 『Go言語による分散サービス』は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。<br><br>
 
@@ -86,11 +86,13 @@ import (
 	close(shutdowns)
 </pre>
 <li>146頁：コード中の「<code>want := <FONT color="#FF0000">status.Code(api.ErrOffsetOutOfRange{}.GRPCStatus().Err())</FONT></code>」を「<code>want := <FONT color="#0000FF">codes.OutOfRange</FONT></code>」に修正（2022.11.13）</li>
+<li>165頁：上から2行目の「<code>return conn, <FONT color="#FF0000">err</FONT></code>」を「<code>return conn, <FONT color="#0000FF">nil</FONT></code>」に修正（2022.12.4）</li>
 <li>168頁：<code>distributed_test.go</code>の<code>import</code>から<FONT color="#FF0000"><code>io/ioutil</code></FONT>を削除（2022.10.23）</li>
 <li>169頁：<code>distributed_test.go</code>内の「<FONT color="#FF0000"><code>ioutil.TempDir</code></FONT>」を「<FONT color="#0000FF"><code>os.MkdirTemp</code></FONT>」に修正（2022.10.23）</li>
 <li>173頁：<code>Agent</code>構造体の定義にある<code>shutdowns</code>フィールドを削除（2022.11.13）
 <li>175頁：<code>setupServer()</code>関数の最後の「<code>return <FONT color="#FF0000">err</FONT></code>」を「<code>return <FONT color="#0000FF">nil</FONT></code>」に修正（2022.11.13）</li>
 <li>177頁：コード中の「<code>want := <FONT color="#FF0000">status.Code(api.ErrOffsetOutOfRange{}.GRPCStatus().Err())</FONT></code>」を「<code>want := <FONT color="#0000FF">codes.OutOfRange</FONT></code>」に修正（2022.11.13）</li>
+<li>181頁：上から7行目の「再び一つ目サーバ」を「再び一つ目<FONT color="#0000FF">の</FONT>サーバ」に修正（2022.12.4）</li>
 </UL>
 
 <H4>互換性</h4>
