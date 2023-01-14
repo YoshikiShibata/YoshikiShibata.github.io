@@ -11,7 +11,7 @@
 <center>
 <h2>
 <font color="#006600">『Go言語による分散サービス』正誤表</font></h2>
-<p>2022年12月4日改訂</center>
+<p>2023年1月14日改訂</center>
 <H4>はじめに</H4>
 『Go言語による分散サービス』は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。<br><br>
 
@@ -93,6 +93,19 @@ import (
 <li>175頁：<code>setupServer()</code>関数の最後の「<code>return <FONT color="#FF0000">err</FONT></code>」を「<code>return <FONT color="#0000FF">nil</FONT></code>」に修正（2022.11.13）</li>
 <li>177頁：コード中の「<code>want := <FONT color="#FF0000">status.Code(api.ErrOffsetOutOfRange{}.GRPCStatus().Err())</FONT></code>」を「<code>want := <FONT color="#0000FF">codes.OutOfRange</FONT></code>」に修正（2022.11.13）</li>
 <li>181頁：上から7行目の「再び一つ目サーバ」を「再び一つ目<FONT color="#0000FF">の</FONT>サーバ」に修正（2022.12.4）</li>
+<li>236頁：Metacontrollerのインストール手順にある
+<pre>
+    $ export MC_URL=https://raw.githubusercontent.com\
+    /GoogleCloudPlatform/metacontroller/master/manifests/
+</pre>
+を、
+<pre>
+    $ export MC_URL=https://raw.githubusercontent.com\
+    /metacontroller/metacontroller/master/manifests/production
+    $ curl -L $MC_URL/metacontroller-crds-v1.yaml > \
+    metacontroller/templates/metacontroller-crds-v1.yaml
+</pre>
+に修正します（2023.1.14） </li>
 </UL>
 
 <H4>互換性</h4>
@@ -100,8 +113,9 @@ import (
 <li>62頁で<code>google.golang.org/grpc</code>として<code>v1.45.0</code>のインストールが示されています。これを<code>latest</code>にすると196頁の<code>picker_test.go</code>がコンパイルできなくなります。コンパイルできるのは、<code>v1.50.0</code>までですので、注意してください（2022.12.03）</li>
 </ul>
 
+
 <H4>謝辞</H4>
 誤りの指摘を頂きました次の方々に感謝いたします。<br>
-　玉木 竜二、宮原 孝行、<a href="https://technical-book-reading-2.connpass.com/event/257553/">第2回『Go言語による分散サービス』オンライン読書</a>の参加者、Tatsuya Watanabe
+　玉木 竜二、宮原 孝行、<a href="https://technical-book-reading-2.connpass.com/event/257553/">第2回『Go言語による分散サービス』オンライン読書</a>の参加者、Tatsuya Watanabe、浦川 悠也
 </body>
 </html>
