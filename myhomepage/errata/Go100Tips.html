@@ -11,12 +11,14 @@
 <center>
 <h2>
 <font color="#006600">『Go言語100Tips』正誤表</font></h2>
-<p>2023年9月17日改訂</center>
+<p>2024年4月3日改訂</center>
 <H4>はじめに</H4>
 『Go言語100Tips』は、何度も校正を重ねましたが、誤りを見逃していたりするかもしれません。誤りに気づかれた方は、<a href="mailto:yshibata at ca2 dot so-net dot ne dot jp">連絡</a>をお願いいたします。<br><br>
 
 <a NAME="01Printing"></a><B>第1刷 (2023年8月21日発行)</B><br>
 <UL>
+		<li>49頁：5行目の「しかし、クライアントが<FONT color="#FF0000">デフォルトの設定を使いたい場合、空でもかまわないので、次のようにConfig構造体を</FONT>渡す必要があります。」を<br>「しかし、クライアントが<FONT color="#0000FF">ビルダーを使いたくない場合、明示的にportを指定したConfig構造体を次のように</FONT>渡す必要があります。」に修正し、<br>コードを次のように修正します（2024.4.3）<br>
+<code>server, err := httplib.NewServer("localhost", httplib.Config{<FONT color="#0000FF">port: 8080</FONT>})</code></li>
 <li>57頁：コード中のコメント「顧客を表します」を「顧客を表します<FONT color="#0000FF">。</FONT>」に修正（2023.9.17）</li>
 <li>57頁：コード中のコメント「顧客<code>ID</code>を返します」を「顧客<code>ID</code>を返します<FONT color="#0000FF">。</FONT>」に修正（2023.9.17）</li>
 <li>57頁：コード中のコメント「2点間の最短経路を返します」を「2点間の最短経路を返します<FONT color="#0000FF">。</FONT>」に修正（2023.9.17）</li>
