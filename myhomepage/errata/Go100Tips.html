@@ -17,8 +17,13 @@
 
 <a NAME="01Printing"></a><B>第1刷 (2023年8月21日発行)</B><br>
 <UL>
-		<li>49頁：5行目の「しかし、クライアントが<FONT color="#FF0000">デフォルトの設定を使いたい場合、空でもかまわないので、次のようにConfig構造体を</FONT>渡す必要があります。」を<br>「しかし、クライアントが<FONT color="#0000FF">ビルダーを使いたくない場合、明示的にportを指定したConfig構造体を次のように</FONT>渡す必要があります。」に修正し、<br>コードを次のように修正します（2024.4.3）<br>
-<code>server, err := httplib.NewServer("localhost", httplib.Config{<FONT color="#0000FF">port: 8080</FONT>})</code></li>
+<li>49頁：上から7行目のコードを次のように修正します。
+<pre><code> 
+builder := httplib.ConfigBuilder{} // ← ConfigBuilderを作成する
+cfg, _ := builder.Build() // ← Portが空のままConfig構造体を作成する
+
+server, err := httplib.NewServer("localhost", cfg) 
+</code></pre></li>
 <li>57頁：コード中のコメント「顧客を表します」を「顧客を表します<FONT color="#0000FF">。</FONT>」に修正（2023.9.17）</li>
 <li>57頁：コード中のコメント「顧客<code>ID</code>を返します」を「顧客<code>ID</code>を返します<FONT color="#0000FF">。</FONT>」に修正（2023.9.17）</li>
 <li>57頁：コード中のコメント「2点間の最短経路を返します」を「2点間の最短経路を返します<FONT color="#0000FF">。</FONT>」に修正（2023.9.17）</li>
